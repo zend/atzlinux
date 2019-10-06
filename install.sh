@@ -2,6 +2,9 @@
 cd `dirname $0`; pwd
 echo "开始安装 Debian 中文套件 ..."
 
+echo "检查安装包文件完整性"
+md5sum -c MD5SUM.txt
+
 echo "开始安装 wine32 ..."
 ./install-wine32.sh
 
