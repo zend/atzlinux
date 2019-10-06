@@ -2,7 +2,7 @@
 echo '在添加 deepin 安装源后，用该命令下载 wine32 所要的 deb 包'
 cd `dirname $0`; pwd
 ../install-deepin-keyring.sh
-apt update
+./deepin/add-deepin-repo.sh
 
 apt-get download \
 udis86 \
@@ -19,3 +19,4 @@ deepin-wine-uninstaller \
 deepin-wine 
 
 ../deepin/uninstall-deepin-keyring.sh
+./deepin/clear-deepin-repo.sh
