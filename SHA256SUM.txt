@@ -1,5 +1,17 @@
 1ee9f02842e6c2c8c79c48b2e932074f9c213a8eb4238e5e63f20438562fecbb  ./netease-cloud-music/netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb
 bbfd2ed65fc540f96d7d3ab0f626803c2638e2d8da04b6291f13ca2e832ec72a  ./deepin/deepin-keyring_2019.01.09-1+stable_all.deb
+5b651ffc16a181b01ebe92c2a9eacc4e5c90c1ae25c8b588a1337c4ce6431a5e  ./sogoupinyin/sogoupinyin_2.2.0.0108_amd64.deb
+7f6c1dfa73fa6a21554dccaa67158ab70fed82d4484040d673680f88e34d601a  ./deepin-wine32/deepin-wine-helper_1.2deepin8_i386.deb
+a56750031165c78ab157cb11c2e4357955c552f0bc80c0c213dc17d6078cc7dd  ./deepin-wine32/deepin-wine-binfmt_2.18-18_all.deb
+b3867fa74f102da49b862a3bd7acf7e2b131973ba9b0b4114c8c196d0208f97c  ./deepin-wine32/deepin-wine-plugin_1.0deepin2_amd64.deb
+4da082eef926fbacadd414864db0c861fc2145cb6c49d9b5e00b721b4d9d365c  ./deepin-wine32/deepin-fonts-wine_2.18-19_all.deb
+405e8ccca0649cf3e3760d4429a3138a6652779f87a8a13290e5f60ad2e35323  ./deepin-wine32/deepin-wine32-preloader_2.18-19_i386.deb
+ee3d7049537f5ffee0d55c641ab6b3b0987f9c322c3debcf51eac03d98de80a4  ./deepin-wine32/deepin-wine_2.18-19_all.deb
+224203708d2b8eb30755353e32536691c7d62db1526e76c974dc05a5ecf255b0  ./deepin-wine32/deepin-wine-uninstaller_0.1deepin2_i386.deb
+78843258d1185ee680bf7cee5814a5e7194a430940d40a65e760ab7719c6da8b  ./deepin-wine32/udis86_1.72-2_i386.deb
+f10cd0f554d0f31484e5e5e365e54d5d46dd7e07ac35f49d5bbb4cafeaf22009  ./deepin-wine32/deepin-libwine_2.18-19_i386.deb
+80402b66b2779c02b61ea559023f3cede90b1b90448dfb56fc83969a12ff9f8e  ./deepin-wine32/deepin-wine32_2.18-19_i386.deb
+e910a069fb8b2b2b9b632b5c83ccd639a457e6e6069af3a96e5e669144a87adf  ./deepin-wine32/deepin-wine-plugin-virtual_1.0deepin3_all.deb
 9f4e15a9fc934143713e2912562f357186edeb38e21d26b598475c9342343185  ./qq/deepin.com.qq.im_8.9.19983deepin23_i386.deb
 4d6161a694e4efaa7f918dea9839cccc9a928340417a260be28c370bc2dd74f5  ./youdao-dict/youdao-dict_1.1.0-0-deepin_amd64.deb
 24b825423d46724d9695677809821673af0a30731edb8393e578164710acc141  ./baidunetdisk/baidunetdisk_linux_2.0.2.deb
