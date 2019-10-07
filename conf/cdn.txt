@@ -2,3 +2,6 @@
 debian-cn.lilishare.com
 CNAME:
 debian-cn.lilishare.com.cdn.dnsv1.com
+
+wget http://debian-cn.lilishare.com/MD5SUM.txt
+wget http://debian-cn.lilishare.com/debian-cn.tar.gz
