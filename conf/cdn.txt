@@ -1,0 +1,4 @@
+域名:
+debian-cn.lilishare.com
+CNAME:
+debian-cn.lilishare.com.cdn.dnsv1.com
