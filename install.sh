@@ -2,9 +2,6 @@
 cd `dirname $0`; pwd
 echo "开始安装 Debian 中文套件 ..."
 
-echo "检查安装包文件完整性"
-md5sum -c MD5SUM.txt
-
 echo "开始安装 wine32 ..."
 ./install-wine32.sh
 
@@ -13,12 +10,6 @@ echo "开始安装 qq ..."
 
 echo "开始安装 wechat ..."
 ./install-wechat.sh
-
-echo "开始安装 baidunetdisk ..."
-./install-baidunetdisk.sh
-
-echo "开始安装 netease-cloud-music ..."
-./install-netease-cloud-music.sh 
 
 echo "开始安装 sogoupinyin ..."
 ./install-sogoupinyin.sh
