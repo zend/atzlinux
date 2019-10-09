@@ -14,12 +14,6 @@ echo "开始卸载  wine32 ..."
 echo "开始卸载 wechat ..."
 ./wechat/uninstall-wechat.sh
 
-echo "开始卸载 baidunetdisk ..."
-./baidunetdisk/uninstall-baidunetdisk.sh
-
-echo "开始卸载 netease-cloud-music ...."
-./netease-cloud-music/uninstall-netease-cloud-music.sh
-
 echo "开始卸载 youdao-dict ..."
 ./youdao-dict/uninstall-youdao-dict.sh
 
