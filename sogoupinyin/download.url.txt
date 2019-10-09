@@ -1,2 +1,3 @@
 # https://pinyin.sogou.com/linux/
 http://cdn2.ime.sogou.com/dl/index/1524572264/sogoupinyin_2.2.0.0108_amd64.deb?st=BN0Em1lJ_UaP3N9q5i3L9A&e=1570243807&fn=sogoupinyin_2.2.0.0108_amd64.deb
+http://cdn2.ime.sogou.com/dl/index/1524572032/sogoupinyin_2.2.0.0108_i386.deb?st=Z5JeX1MJgqAb8TOQa73ziA&e=1570591255&fn=sogoupinyin_2.2.0.0108_i386.deb
