@@ -4,7 +4,7 @@ cd `dirname $0`; pwd
 ../install-deepin-keyring.sh
 ../deepin/add-deepin-repo.sh
 
-apt-get download \
+apt-get -a=i386 download \
 udis86 \
 deepin-fonts-wine \
 deepin-libwine \
