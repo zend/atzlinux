@@ -2,7 +2,6 @@
 cd youdao-dict
 cd `dirname $0`; pwd
 echo '即将开始安装 ...'
-#wget -c -O youdao-dict_1.1.0-0-deepin_amd64.deb http://codown.youdao.com/cidian/linux/youdao-dict_1.1.0-0-deepin_amd64.deb
 wget -c -O youdao-dict_1.1.0-0-deepin_i386.deb "http://codown.youdao.com/cidian/linux/youdao-dict_1.1.0-0-deepin_i386.deb"
 
 apt -y install ./youdao-dict_1.1.0-0-deepin_i386.deb
