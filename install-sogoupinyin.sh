@@ -2,9 +2,14 @@
 cd sogoupinyin
 cd `dirname $0`; pwd
 echo '即将开始安装 ...'
-wget -c -O  sogoupinyin_2.2.0.0108_amd64.deb "http://cdn2.ime.sogou.com/dl/index/1524572264/sogoupinyin_2.2.0.0108_amd64.deb?st=BN0Em1lJ_UaP3N9q5i3L9A&e=1570243807&fn=sogoupinyin_2.2.0.0108_amd64.deb"
 
-apt -y install ./sogoupinyin_2.2.0.0108_amd64.deb
+URL="http://cdn2.ime.sogou.com/dl/index/1571302197/sogoupinyin_2.3.1.0112_amd64.deb?st=x_sbxD4RrG1tvywaRYDD_Q&e=1571370757&fn=sogoupinyin_2.3.1.0112_amd64.deb"
+
+FILENAME=`echo $URL|awk -F "=" {'print $NF'}`
+
+wget -c -O $FILENAME $URL
+
+apt -y install ./$FILENAME
 
 rm -fv /etc/apt/sources.list.d/sogoupinyin.list
 
