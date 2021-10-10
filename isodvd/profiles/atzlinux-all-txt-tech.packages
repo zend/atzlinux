@@ -203,4 +203,5 @@ neofetch
 jq
 deborphan
 apt-show-versions
+distro-info-data
 dists-buster-files-atzlinux
