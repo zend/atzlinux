@@ -1,0 +1,51 @@
+铜豌豆 10.x.y iso 版本制作步骤
+
+在 Debian 官方 10.x 版本正式对外发布，大概一天后开始进行。
+国内 Debian 镜像同步，大概需要一天时间。
+
+制作 iso 服务器： txy.atzlinux.com，后续在本文档中简称 txy 机器。
+
+1.登录 txy 机器，执行 apt update，确认国内 Debian 镜像已经升级。
+
+在 apt update 后，能够看到类似如下输出：
+N: 仓库'https://mirrors.cloud.tencent.com/debian buster InRelease'将其'Version'值从'10.10'修改到了'10.11'
+
+随后执行 apt upgrade 升级，并重启。
+
+2.升级 dists-buster-files-atzlinux 软件包
+git@gitee.com:atzlinux/dists-buster-files-atzlinux.git
+
+该软件包的作用是在安装时，预先放置好 Debian 官方 10.x 版本的 apt 索引文件（位于 /var/lib/apt/lists 目录下），
+避免用户在安装时通过网络从 Debian 镜像网站下载，节省安装时间。
+
+3.升级 atzlinux-update-patch 软件包
+git@gitee.com:atzlinux/atzlinux-update-patch.git
+
+更新 etc/atzlinux_version 文件到铜豌豆发布版本号 10.x.y
+
+4.检查 iso 默认集成的非 Debian 官方软件包，是否有针对 Debian 10 的升级版本？
+如有，将这些软件包的最新版本，经过验证 Ok 后，加入铜豌豆软件源。
+
+5.升级 铜豌豆软件包版本号 到此次发布版本号 10.x.y
+/var/www/html/atzlinux/apt-ftparchive-buster.conf 
+更新 APT::FTPArchive::Release::Version 行
+
+6.更新 iso 默认集成的 deb 软件包文件列表
+git@gitee.com:atzlinux/debian-cn.git
+apt-install 分支下 isodvd/profiles 目录下的 *.packages 文件
+
+7.更新铜豌豆软件源索引
+
+8.更新 iso 构建配置文件版本号
+git@gitee.com:atzlinux/debian-cn.git
+apt-install 分支下 isodvd/profiles 目录下的  amd64.build.conf 文件
+如下两行：
+export DEBVERSION=
+export DISKINFO=
+
+
+运行 iso 构建脚本：amd64.build.sh
+
+
+
+
