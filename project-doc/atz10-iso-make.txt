@@ -46,6 +46,70 @@ export DISKINFO=
 
 运行 iso 构建脚本：amd64.build.sh
 
+### 对外发布
+1. https://cdimage.atzlinux.com/atzlinux-cd/
+txy 服务器 Nginx 上有配置该域名， iso 文件的校验文件通过该网站发布
 
+2.在 txy 服务器上创建新版本 iso 目录结构
+cd /var/www/html/atzlinux-cd/
 
+mkdir 10.11.1
+cd 10.11.1
+mkdir -p amd64/iso-dvd
+mkdir -p amd64/jigdo-dvd
 
+3.拷贝生成的 iso 文件
+cd /var/www/html/atzlinux-cd/10.11.1/amd64/iso-dvd
+mv ~/isodvd/images/atzlinux-10.11.1-amd64-DVD-1.iso ./
+
+4.生成 iso 文件的校验和
+../../../checksum.sh
+会生成 MD5SUMS  SHA1SUMS  SHA256SUMS  SHA512SUMS 校验和文件
+
+5.生成 iso 文件的校验和签名
+../../../sign.sh
+会生成 MD5SUMS.sign  SHA1SUMS.sign  SHA256SUMS.sign  SHA512SUMS.sign 校验和签名文件
+
+6.去掉 iso 的可读属性，禁止在 txy 服务器上直接下载
+chmod 600 atzlinux-10.11.1-amd64-DVD-1.iso
+
+7.拷贝生成的 jigdo 文件，并生成校验和、校验和签名
+cd /var/www/html/atzlinux-cd/10.11.1/amd64/jigdo-dvd
+mv ~/isodvd/images/atzlinux-10.11.1-amd64-DVD-1.jigdo ./
+mv ~/isodvd/images/atzlinux-10.11.1-amd64-DVD-1.template ./
+../../../checksum.sh
+../../../sign.sh
+
+8.将 新版本 iso 文件目录上传到 cdn.atzlinux.com 腾讯云 COS 存储
+在 txy 机器上，用 root 账号执行：
+coscmd upload -r atzlinux-cd/10.11.1/ atzlinux-cd/10.11.1/
+
+9.在 华为云 机器上，利用已经上传到腾讯云的 jigdo 文件，生成 iso 文件
+hwymini.atzlinux.com
+
+创建新版本 iso 目录结构
+mkdir 10.11.1
+cd 10.11.1
+mkdir -p amd64/iso-dvd
+mkdir -p amd64/jigdo-dvd
+
+下载 jigdo 文件
+cd /home/atzlinux/html/atzlinux-cd/10.11.1/amd64/jigdo-dvd
+
+wget https://cdn.atzlinux.com/atzlinux-cd/10.11.1/amd64/jigdo-dvd/atzlinux-10.11.1-amd64-DVD-1.jigdo
+wget https://cdn.atzlinux.com/atzlinux-cd/10.11.1/amd64/jigdo-dvd/atzlinux-10.11.1-amd64-DVD-1.template
+
+制作 iso 文件，并拷贝到 amd64/iso-dvd 目录
+jigdo-lite atzlinux-10.11.1-amd64-DVD-1.jigdo
+
+10.将生成的 iso 文件，上传至华为云 CDN obs 存储
+obsutil sync atzlinux-cd/10.11.1 obs://aptsh1/atzlinux-cd/10.11.1
+
+发布完成。
+
+对华为云 CDN 进行下载测试：
+wget https://apt.atzlinux.com/atzlinux-cd/10.11.1/amd64/iso-dvd/atzlinux-10.11.1-amd64-DVD-1.iso
+
+验证校验和和签名：
+wget https://cdimage.atzlinux.com/atzlinux-cd/10.11.1/amd64/iso-dvd/SHA1SUMS
+wget https://cdimage.atzlinux.com/atzlinux-cd/10.11.1/amd64/iso-dvd/SHA1SUMS.sign
