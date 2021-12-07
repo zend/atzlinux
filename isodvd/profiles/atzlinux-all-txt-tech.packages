@@ -204,4 +204,8 @@ jq
 deborphan
 apt-show-versions
 distro-info-data
+strace
+vim-scripts
+blhc
+reprotest
 dists-buster-files-atzlinux
