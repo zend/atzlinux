@@ -1,0 +1,103 @@
+%% LyX 2.3.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[UTF8]{ctexrep}
+\usepackage[T1]{fontenc}
+\usepackage[paperwidth=52mm,paperheight=52mm]{geometry}
+\geometry{verbose,tmargin=0cm,bmargin=0cm,lmargin=0cm,rmargin=0cm,headheight=0cm,headsep=0cm,footskip=0cm}
+\pagestyle{empty}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\makeatletter
+\@ifundefined{date}{}{\date{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+\usepackage{ctex}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{fancybox} %各种样式的盒子
+%
+%\usepackage[a4paper,twoside,nohead,left=28mm,right=26mm,top=37mm,bottom=35mm,footskip=9.46mm]{geometry}
+%\usepackage[paperwidth=96mm,paperheight=96mm,nohead,certering,margin=10mm]{geometry}
+\usepackage{qrcode} %二维码宏包
+
+%
+%\usepackage{float}
+%\usepackage{graphics}
+%%
+%
+%% 103. 指定：[英文/数字]的默认用字
+
+\setmainfont{Noto Serif}
+%\setmainfont{JetBrains Mono}
+%\setsansfont{HarmonyOS Sans}
+%\setmonofont{Noto Mono}
+%\setmonofont{JetBrains Mono}
+
+%
+%\setCJKmainfont [ ItalicFont = {JiangChengXieSong-300W} ] {Noto Serif CJK SC}
+%\setCJKsansfont [ ItalicFont = {JiangChengXieHei-700W} ] {Noto Sans CJK SC}
+%\setmainfont [ ItalicFont = {JiangChengXieSong-300W} ] {Noto Serif CJK SC}
+%\setsansfont [ ItalicFont = {JiangChengXieHei-700W} ] {Noto Sans CJK SC}
+%
+
+\makeatother
+
+\begin{document}
+% 2021-12-29, Careone
+\fontspec{Noto Serif}
+\zihao{0}
+
+%% DEBIAN_RED='#992233' #debian 红
+%% UOS_BLUE='#2342ed' #UOS 蓝
+%% MINT_GREEN='#aaee77' 
+%% UBUNTU_YELLOW='#ee4400'
+%
+%% \usepackage{xcolor}
+\definecolor{debianRed}{HTML}{992233} %自定义颜色1: Debian 红
+\definecolor{ubuntuYellow}{HTML}{ee4400} %自定义颜色2: Ubuntu 黄
+\definecolor{mintGreen}{HTML}{aaee77} %自定义颜色3: LinuxMint 绿
+\definecolor{deepinBlue}{HTML}{2342ed} %自定义颜色4: Deepin 深度蓝
+\definecolor{uosBlue}{HTML}{2342ed} %自定义颜色5: UOS 蓝
+%%%%%%%%%%%%%%%%%%
+%% P1: AtzLinux
+\mbox{}
+\\
+%\vfil
+\vspace{-0.2ex}
+%
+\noindent
+\hfil\color{ubuntuYellow}A\color{mintGreen}t\color{deepinBlue}z~\hfil
+\\
+\centerline{\raisebox{1ex}{\color{debianRed}Linux}}
+%
+\vfill
+\mbox{}
+%%%%%%%%%%%%%%%%%%
+%% P2: AtzLinux （大型小写字母）
+%% 提示：此处使用 \sc “大型小写”命令，把所有小写字母，显示为“小号的大写英文字母格式”
+\mbox{}
+\\
+%\vfil
+\vspace{-0.2ex}
+%
+\sc{
+\noindent
+\hfil\color{ubuntuYellow}A\color{mintGreen}t\color{deepinBlue}z~\hfil
+\\
+\centerline{\raisebox{1ex}{\color{debianRed}Linux}}
+}
+%
+\vfill
+\mbox{}
+%%%%%%%%%%%%%%
+%% P3:
+\newpage
+\color{debianRed}
+\vspace*{.01ex}\noindent\,
+\qrcode{AtzLinux}\quad
+%------------
+
+\end{document}
