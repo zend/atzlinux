@@ -208,4 +208,5 @@ strace
 vim-scripts
 blhc
 reprotest
+apt-file
 dists-buster-files-atzlinux
