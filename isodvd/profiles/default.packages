@@ -11,4 +11,4 @@ console-setup-linux
 console-setup
 keyboard-configuration
 # atzlinux project apt key
-atzlinux-archive-keyring
+#atzlinux-archive-keyring
