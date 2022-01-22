@@ -45,16 +45,14 @@ smartmontools
 hdparm
 sdparm
 genisoimage
-amd64-microcode
-intel-microcode
 bash-completion
 openssh-client
 build-essential
 iproute2
 simple-cdd
 jigdo-file
-rar
-unrar
+#rar
+#unrar
 xz-utils
 debian-reference-zh-cn
 manpages-zh
@@ -97,7 +95,7 @@ ntpdate
 tlp
 xorriso
 debian-cd
-installation-guide-amd64
+installation-guide-arm64
 dpkg-dev
 debhelper
 myrepos
@@ -132,11 +130,11 @@ dh-python
 help2man
 libdebian-installer4-dev
 atzlinux-update-patch
-atzlinux-update-patch-txt-tech
+#atzlinux-update-patch-txt-tech
 zstd
 fcitx-pinyin
 fcitx-frontend-fbterm
-linux-headers-rt-amd64
+#linux-headers-rt-amd64
 perl-openssl-defaults
 libnet-ssleay-perl
 libio-socket-ssl-perl
@@ -147,7 +145,7 @@ lintian
 fonts-wqy-zenhei
 firmware-brcm80211
 eject
-acpi
+#acpi
 libdebhelper-perl
 alien
 debhelper
@@ -184,7 +182,7 @@ tarlz
 ethtool
 ncftp
 tnftp
-ltrace
+#ltrace
 apt-forktracer
 linux-cpupower
 tlp-rdw
@@ -193,7 +191,7 @@ sysstat
 bc
 netscripts-atzlinux
 firmware-atheros
-hw-probe
+#hw-probe
 linux-perf-4.19
 lm-sensors
 manpages
@@ -209,4 +207,4 @@ vim-scripts
 blhc
 reprotest
 apt-file
-dists-buster-files-atzlinux
+#dists-buster-files-atzlinux
