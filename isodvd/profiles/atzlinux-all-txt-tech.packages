@@ -33,7 +33,7 @@ bind9-host
 bzip2
 csh
 netcat
-mariadb-client-core-10.3
+#mariadb-client-core-10.3
 default-mysql-client
 rsync
 screen
