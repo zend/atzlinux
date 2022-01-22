@@ -1,7 +1,5 @@
 # keep grub-pc and grub-efi or debian-installer may not work properly on
 # i386/amd64.
-grub-pc
-grub-efi
 
 popularity-contest
 console-setup
@@ -52,10 +50,8 @@ task-laptop
 # add by atzlinux, need by last grub install step
 os-prober
 efibootmgr
-grub-efi-amd64-signed
 mokutil
 shim-unsigned
-shim-helpers-amd64-signed
 shim-signed-common
 shim-signed
 
@@ -94,7 +90,4 @@ firmware-realtek
 firmware-samsung
 firmware-siano
 firmware-ti-connectivity
-intel-microcode
 firmware-zd1211
-amd64-microcode
-intel-microcode
