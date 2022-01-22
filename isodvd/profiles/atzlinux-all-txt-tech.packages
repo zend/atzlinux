@@ -121,7 +121,7 @@ dh-make
 dh-autoreconf
 dh-exec
 mp3blaster
-python-mutagen
+#python-mutagen
 mtools
 dosfstools
 fbterm
@@ -192,7 +192,7 @@ bc
 netscripts-atzlinux
 firmware-atheros
 #hw-probe
-linux-perf-4.19
+#linux-perf-4.19
 lm-sensors
 manpages
 manpages-dev
