@@ -64,7 +64,6 @@ firmware-b43legacy-installer
 firmware-linux-free
 hdmi2usb-fx2-firmware
 firmware-ath9k-htc
-amd64-microcode
 atmel-firmware
 bluez-firmware
 dahdi-firmware-nonfree
