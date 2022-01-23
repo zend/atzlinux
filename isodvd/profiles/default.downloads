@@ -50,6 +50,7 @@ task-laptop
 # add by atzlinux, need by last grub install step
 os-prober
 efibootmgr
+grub-efi-arm64
 mokutil
 shim-unsigned
 shim-signed-common
