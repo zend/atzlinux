@@ -7,7 +7,8 @@ d-i debian-installer/language string zh_CN:zh
 d-i debian-installer/country string CN
 d-i debian-installer/locale select zh_CN.UTF-8
 d-i     localechooser/continentlist     select Asia
-d-i     localechooser/shortlist   select CN
+d-i     localechooser/shortlist         select CN
+d-i     localechooser/shortlist/zh_CN   select China
 d-i localechooser/languagelist	select	zh_CN
 d-i localechooser/preferred-locale	select	zh_CN.UTF-8
 # Optionally specify additional locales to be generated.
