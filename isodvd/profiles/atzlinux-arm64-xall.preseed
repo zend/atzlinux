@@ -107,7 +107,7 @@ d-i netcfg/wireless_wep string
 # If you select ftp, the mirror/country string does not need to be set.
 d-i mirror/protocol string https
 d-i mirror/country string manual
-d-i mirror/https/hostname string mirrors.cloud.tencent.com
+d-i mirror/https/hostname string mirrors.bfsu.edu.cn
 d-i mirror/https/directory string /debian
 d-i mirror/https/proxy string
 
@@ -176,7 +176,7 @@ d-i apt-setup/contrib boolean true
 # Select which update services to use; define the mirrors to be used.
 # Values shown below are the normal defaults.
 d-i apt-setup/services-select multiselect updates, proposed-updates, backports
-#d-i apt-setup/security_host string mirrors.cloud.tencent.com
+d-i apt-setup/security_host string mirrors.bfsu.edu.cn
 
 # 启用 APT 源代码软件源？
 apt-setup-udeb  apt-setup/enable-source-repositories    boolean false
@@ -198,7 +198,7 @@ apt-setup-udeb  apt-setup/enable-source-repositories    boolean false
 #d-i debian-installer/allow_unauthenticated boolean true
 
 # Uncomment this to add multiarch configuration for i386
-d-i apt-setup/multiarch string i386
+#d-i apt-setup/multiarch string i386
 
 
 ### Package selection
@@ -324,9 +324,5 @@ d-i preseed/early_command string anna-install eatmydata-udeb
 d-i apt-setup/local0/repository string \
 	https://apt.atzlinux.com/atzlinux bullseye  main contrib non-free
 d-i apt-setup/local0/comment string atzlinux.com desktop project apt source
-
-d-i apt-setup/local1/repository string \
-	deb https://mirrors.cloud.tencent.com/debian-security bullseye-security main non-free contrib
-d-i apt-setup/local1/comment string security apt source
 
 d-i apt-setup/cdrom/set-first boolean	false
