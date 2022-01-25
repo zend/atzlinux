@@ -2,3 +2,9 @@ apt-transport-https
 software-properties-common
 debconf
 debconf-utils
+net-tools
+bind9-dnsutils
+network-manager
+opencc
+manpages-zh
+zhcon
