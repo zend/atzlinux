@@ -2,24 +2,21 @@
 ### Localization
 # Preseeding only locale sets language, country and locale.
 
-# The values can also be preseeded individually for greater flexibility.
 d-i debian-installer/language string zh_CN:zh
 d-i debian-installer/country string CN
-d-i debian-installer/locale select zh_CN.UTF-8
-d-i     localechooser/continentlist     select Asia
-d-i     localechooser/shortlist         select CN
-d-i     localechooser/shortlist/zh_CN   select CN
-d-i localechooser/languagelist	select	zh_CN
-d-i localechooser/preferred-locale	select	zh_CN.UTF-8
+d-i	debian-installer/locale	select	zh_CN.UTF-8
+d-i	localechooser/languagelist	select	zh_CN
+d-i	localechooser/preferred-locale	select	zh_CN.UTF-8
+d-i	localechooser/shortlist	select	CN
+d-i	localechooser/shortlist/zh_CN	select	CN
 # Optionally specify additional locales to be generated.
-d-i localechooser/supported-locales multiselect zh_CN.GB18030 zh_CN.GBK zh_CN.GB2312 zh_CN.UTF-8
+d-i	localechooser/supported-locales	multiselect	zh_CN.GB18030 zh_CN.GBK zh_CN.GB2312 zh_CN.UTF-8
+# 哪个将作为系统环境默认的区域设置(locale)？
+d-i	locales/default_environment_locale	string	zh_CN.UTF-8
+# 请选择需要生成的区域设置(locale)。
+d-i	locales/locales_to_be_generated	string	zh_CN.GB18030 zh_CN.GBK zh_CN.GB2312 zh_CN.UTF-8
 
 d-i     debconf/language        string  zh_CN:zh
-
-# 请选择需要生成的区域设置(locale)。
-locales	locales/locales_to_be_generated	multiselect zh_CN.GB18030 zh_CN.GBK zh_CN.GB2312 zh_CN.UTF-8
-# 哪个将作为系统环境默认的区域设置(locale)？
-locales	locales/default_environment_locale select zh_CN.UTF-8
 
 # Keyboard selection.
 d-i keyboard-configuration/xkb-keymap select us
