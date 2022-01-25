@@ -51,6 +51,7 @@ task-laptop
 os-prober
 efibootmgr
 grub-efi-arm64
+grub-efi-arm64-signed
 mokutil
 shim-unsigned
 shim-signed-common
