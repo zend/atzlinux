@@ -12,3 +12,5 @@ console-setup
 keyboard-configuration
 # atzlinux project apt key
 atzlinux-archive-keyring
+# kernel
+linux-image-rt-arm64
