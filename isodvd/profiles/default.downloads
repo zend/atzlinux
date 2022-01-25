@@ -46,6 +46,7 @@ avahi-autoipd
 bluetooth
 powertop
 task-laptop
+task-chinese-s
 
 # add by atzlinux, need by last grub install step
 os-prober
