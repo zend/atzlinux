@@ -22,6 +22,14 @@ d-i     debconf/language        string  zh_CN:zh
 d-i keyboard-configuration/xkb-keymap select us
 # d-i keyboard-configuration/toggle select No toggling
 
+# 返回菜单并更正错误吗？
+partman-basicfilesystems        partman-basicfilesystems/swap_check_failed      boolean false
+# 您是否想返回分区菜单？
+partman-basicfilesystems        partman-basicfilesystems/no_swap        boolean false
+
+# for internal use; can be preseeded
+pkgsel  pkgsel/run_tasksel      boolean false
+
 ### Network configuration
 # Disable network configuration entirely. This is useful for cdrom
 # installations on non-networked devices where the network questions,
@@ -267,9 +275,6 @@ grub-efi-amd64	grub2/force_efi_extra_removable	boolean	true
 # line to prevent this.
 #d-i finish-install/keep-consoles boolean true
 
-# Avoid that last message about the install being complete.
-d-i finish-install/reboot_in_progress note
-
 # This will prevent the installer from ejecting the CD during the reboot,
 # which is useful in some situations.
 #d-i cdrom-detect/eject boolean false
@@ -323,6 +328,19 @@ d-i apt-setup/local0/repository string \
 	https://apt.atzlinux.com/atzlinux bullseye  main contrib non-free
 d-i apt-setup/local0/comment string atzlinux.com desktop project apt source
 
+d-i apt-setup/local1/repository string \
+        deb https://mirrors.bfsu.edu.cn/debian-security bullseye-security  main non-free contrib
+d-i apt-setup/local1/comment string security apt source
+
 d-i apt-setup/cdrom/set-first boolean	false
 
 apt-cdrom-setup apt-setup/disable-cdrom-entries boolean true
+
+### skip some annoying installation status notes
+
+# Avoid that last message about the install being complete.
+d-i finish-install/reboot_in_progress note
+# Avoid the introductory message.
+base-config base-config/intro note
+# Avoid the final message.
+base-config base-config/login note
