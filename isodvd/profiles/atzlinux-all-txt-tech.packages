@@ -33,7 +33,6 @@ bind9-host
 bzip2
 csh
 netcat
-#mariadb-client-core-10.3
 default-mysql-client
 rsync
 screen
@@ -51,8 +50,7 @@ build-essential
 iproute2
 simple-cdd
 jigdo-file
-#rar
-#unrar
+unrar
 xz-utils
 debian-reference-zh-cn
 manpages-zh
@@ -121,7 +119,7 @@ dh-make
 dh-autoreconf
 dh-exec
 mp3blaster
-#python-mutagen
+python3-mutagen
 mtools
 dosfstools
 fbterm
@@ -134,7 +132,7 @@ atzlinux-update-patch
 zstd
 fcitx-pinyin
 fcitx-frontend-fbterm
-#linux-headers-rt-amd64
+linux-headers-rt-arm64
 perl-openssl-defaults
 libnet-ssleay-perl
 libio-socket-ssl-perl
@@ -145,7 +143,6 @@ lintian
 fonts-wqy-zenhei
 firmware-brcm80211
 eject
-#acpi
 libdebhelper-perl
 alien
 debhelper
@@ -182,7 +179,6 @@ tarlz
 ethtool
 ncftp
 tnftp
-#ltrace
 apt-forktracer
 linux-cpupower
 tlp-rdw
@@ -191,8 +187,8 @@ sysstat
 bc
 netscripts-atzlinux
 firmware-atheros
-#hw-probe
-#linux-perf-4.19
+hw-probe
+linux-perf
 lm-sensors
 manpages
 manpages-dev
@@ -207,4 +203,4 @@ vim-scripts
 blhc
 reprotest
 apt-file
-#dists-buster-files-atzlinux
+dists-bullseye-files-contents-atzlinux
