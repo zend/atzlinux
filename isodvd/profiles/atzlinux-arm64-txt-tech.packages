@@ -205,3 +205,4 @@ reprotest
 apt-file
 dists-bullseye-files-contents-atzlinux
 atzlinux-update-patch-txt-tech
+linux-image-5.15.0-0.bpo.2-rt-arm64
