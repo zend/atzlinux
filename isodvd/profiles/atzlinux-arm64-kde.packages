@@ -316,4 +316,5 @@ iptux
 distro-info-data
 fonts-jetbrains-mono
 nvme-cli
+libsodium23
 dists-buster-files-atzlinux
