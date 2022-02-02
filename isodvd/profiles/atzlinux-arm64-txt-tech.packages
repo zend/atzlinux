@@ -203,8 +203,9 @@ vim-scripts
 blhc
 reprotest
 apt-file
-dists-bullseye-files-contents-atzlinux
-atzlinux-update-patch-txt-tech
 nvme-cli
 libsodium23
 linux-image-5.15.0-0.bpo.2-rt-arm64
+atzlinux-update-patch-txt-tech
+dists-bullseye-files-atzlinux
+dists-bullseye-files-contents-atzlinux
