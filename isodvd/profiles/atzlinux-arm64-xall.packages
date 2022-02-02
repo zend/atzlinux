@@ -574,4 +574,4 @@ distro-info-data
 fonts-jetbrains-mono
 nvme-cli
 libsodium23
-dists-buster-files-atzlinux
+dists-bullseye-files-atzlinux
