@@ -14,7 +14,6 @@ exo-utils
 fcitx-config-common
 fcitx-config-gtk
 fcitx-frontend-all
-fcitx-frontend-qt4
 fcitx-frontend-qt5
 fcitx-googlepinyin
 fcitx-m17n
