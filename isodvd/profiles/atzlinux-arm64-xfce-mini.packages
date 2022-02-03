@@ -14,7 +14,6 @@ sudo
 software-properties-common
 
 liblightdm-gobject-1-0
-libindicator3-7
 lightdm
 lightdm-gtk-greeter
 task-chinese-s

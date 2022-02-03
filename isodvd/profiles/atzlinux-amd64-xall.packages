@@ -331,7 +331,6 @@ task-mate-desktop
 task-gnome-desktop
 cheese
 shadowsocks-qt5
-libindicator3-7
 liblightdm-gobject-1-0
 fonts-droid-fallback
 fonts-wqy-zenhei
