@@ -314,4 +314,5 @@ distro-info-data
 fonts-jetbrains-mono
 nvme-cli
 libsodium23
+gpustat
 dists-bullseye-files-atzlinux

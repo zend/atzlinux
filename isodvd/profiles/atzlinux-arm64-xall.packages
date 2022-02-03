@@ -570,4 +570,5 @@ fonts-jetbrains-mono
 nvme-cli
 libsodium23
 dists-bullseye-files-atzlinux
+gpustat
 dists-bullseye-files-dep11-atzlinux
