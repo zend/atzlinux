@@ -53,6 +53,7 @@ fcitx-module-x11
 fcitx-libs
 fcitx-ui-classic
 fcitx
+fcitx-m17n
 
 zenity
 im-config
