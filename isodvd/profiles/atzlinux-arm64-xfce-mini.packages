@@ -41,7 +41,7 @@ fonts-wqy-microhei
 fonts-wqy-zenhei
 xfonts-wqy
 
-libqt4-declarative
+libqt5quickwidgets5
 libnss3
 fcitx-config-gtk
 fcitx-frontend-gtk2
