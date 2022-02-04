@@ -210,7 +210,7 @@ fonts-noto-cjk
 fonts-noto-color-emoji
 libplist-utils
 ideviceinstaller
-python-imobiledevice
+python3-imobiledevice
 libimobiledevice-utils
 python3-plist
 libusbmuxd-tools
