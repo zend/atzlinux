@@ -94,3 +94,6 @@ firmware-samsung
 firmware-siano
 firmware-ti-connectivity
 firmware-zd1211
+
+# only put in iso
+openssh-server
