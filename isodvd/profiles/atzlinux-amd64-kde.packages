@@ -212,7 +212,7 @@ libplist-utils
 ideviceinstaller
 python-imobiledevice
 libimobiledevice-utils
-python-plist
+python3-plist
 libusbmuxd-tools
 usbmuxd
 gvfs-bin
