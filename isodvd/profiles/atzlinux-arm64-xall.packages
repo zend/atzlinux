@@ -312,7 +312,7 @@ wps-office-fonts
 task-mate-desktop
 task-gnome-desktop
 cheese
-shadowsocks-qt5
+shadowsocks-libev
 liblightdm-gobject-1-0
 fonts-droid-fallback
 fonts-wqy-zenhei
