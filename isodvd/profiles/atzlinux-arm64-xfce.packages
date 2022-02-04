@@ -362,4 +362,5 @@ fonts-jetbrains-mono
 nvme-cli
 libsodium23
 gpustat
+linux-headers-rt-arm64
 dists-bullseye-files-atzlinux
