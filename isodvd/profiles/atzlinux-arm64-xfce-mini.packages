@@ -51,7 +51,9 @@ fcitx-frontend-all
 fcitx-module-kimpanel
 fcitx-module-x11
 fcitx-libs
+fcitx-ui-light
 fcitx-ui-classic
+dbus-x11
 fcitx
 fcitx-m17n
 
