@@ -53,7 +53,7 @@ libxfce4ui-utils
 libxfce4util7
 libxfce4util-bin
 libxfce4util-common
-libxfconf-0-2
+libxfconf-0-3
 lightdm
 lightdm-gtk-greeter
 lxappearance
