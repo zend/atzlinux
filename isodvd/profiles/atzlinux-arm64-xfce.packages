@@ -290,7 +290,6 @@ gvfs-backends
 simplescreenrecorder
 zstd
 freerdp2-x11
-rar
 unrar
 pulseaudio-module-bluetooth
 firmware-brcm80211
