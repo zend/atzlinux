@@ -100,3 +100,6 @@ intel-microcode
 firmware-zd1211
 amd64-microcode
 intel-microcode
+
+# only put in iso
+openssh-server
