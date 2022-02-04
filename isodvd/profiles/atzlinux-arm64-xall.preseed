@@ -343,9 +343,10 @@ d-i apt-setup/cdrom/set-first boolean	false
 apt-cdrom-setup apt-setup/disable-cdrom-entries boolean true
 
 ### skip some annoying installation status notes
-
 # Avoid that last message about the install being complete.
-d-i finish-install/reboot_in_progress note
+# 安装完成
+d-i     finish-install/reboot_in_progress       note
+finish-install  finish-install/reboot_in_progress       note
 # Avoid the introductory message.
 base-config base-config/intro note
 # Avoid the final message.
