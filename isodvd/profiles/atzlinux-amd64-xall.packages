@@ -383,7 +383,7 @@ mate-system-monitor
 mate-utils
 mate-applets
 mate-media
-mate-icon-theme-faenza
+mate-icon-theme
 mate-power-manager
 apparmor
 dnsmasq-base
