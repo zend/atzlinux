@@ -97,3 +97,4 @@ firmware-zd1211
 
 # only put in iso
 openssh-server
+bullseye-apt-atzlinux
