@@ -340,7 +340,7 @@ apt-mirror-setup        apt-setup/mirror/error  select  Ignore
 
 d-i apt-setup/cdrom/set-first boolean	false
 
-apt-cdrom-setup apt-setup/disable-cdrom-entries boolean true
+#apt-cdrom-setup apt-setup/disable-cdrom-entries boolean true
 
 ### skip some annoying installation status notes
 # Avoid that last message about the install being complete.
