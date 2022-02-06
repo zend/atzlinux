@@ -546,4 +546,5 @@ dists-bullseye-files-atzlinux
 gpustat
 linux-headers-rt-arm64
 edid-decode
+fonts-lxgw-wenkai
 dists-bullseye-files-dep11-atzlinux
