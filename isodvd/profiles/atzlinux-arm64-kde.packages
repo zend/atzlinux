@@ -309,4 +309,5 @@ gpustat
 linux-headers-rt-arm64
 edid-decode
 fonts-lxgw-wenkai
+opengnb
 dists-bullseye-files-atzlinux
