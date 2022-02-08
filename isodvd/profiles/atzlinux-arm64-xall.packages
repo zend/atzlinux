@@ -548,4 +548,5 @@ linux-headers-rt-arm64
 edid-decode
 fonts-lxgw-wenkai
 opengnb
+com.baidu.baidunetdisk
 dists-bullseye-files-dep11-atzlinux
