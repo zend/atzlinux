@@ -208,4 +208,5 @@ atzlinux-update-patch-txt-tech
 dists-bullseye-files-atzlinux
 edid-decode
 opengnb
+squashfuse
 dists-bullseye-files-contents-atzlinux
