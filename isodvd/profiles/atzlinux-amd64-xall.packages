@@ -39,8 +39,6 @@ libetonyek-0.1-1
 libexttextcat-2.0-0
 libexttextcat-data
 libfbclient2
-libfcitx-qt5-1
-libfcitx-qt5-data
 libfile-basedir-perl
 libfile-desktopentry-perl
 libfile-mimeinfo-perl
@@ -139,6 +137,9 @@ cairo-dock-xfce-integration-plug-in
 dnsutils
 elementary-xfce-icon-theme
 exo-utils
+
+libfcitx-qt5-data
+libfcitx-qt5-1
 fcitx-config-common
 fcitx-config-gtk
 fcitx-dbus-status
@@ -153,6 +154,7 @@ fcitx-table
 fcitx-table-wbpy
 fcitx-table-wubi
 fcitx-ui-classic
+
 file
 firefox-esr-l10n-zh-cn
 fonts-wqy-microhei
@@ -532,8 +534,6 @@ qtqr
 ncftp
 tnftp
 libspdlog1
-libfcitx-qt5-data
-libfcitx-qt5-1
 fcitx-inputmethod-atzlinux
 firmware-sof-signed
 wireless-regdb
