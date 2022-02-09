@@ -16,8 +16,6 @@ d-i	locales/default_environment_locale	string	zh_CN.UTF-8
 # 请选择需要生成的区域设置(locale)。
 d-i	locales/locales_to_be_generated	string	zh_CN.GB18030 zh_CN.GBK zh_CN.GB2312 zh_CN.UTF-8
 
-d-i     debconf/language        string  zh_CN:zh
-
 # Keyboard selection.
 d-i keyboard-configuration/xkb-keymap select us
 # d-i keyboard-configuration/toggle select No toggling
