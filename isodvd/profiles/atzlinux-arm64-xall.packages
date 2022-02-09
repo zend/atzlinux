@@ -33,8 +33,6 @@ libetonyek-0.1-1
 libexttextcat-2.0-0
 libexttextcat-data
 libfbclient2
-libfcitx-qt5-1
-libfcitx-qt5-data
 libfile-basedir-perl
 libfile-desktopentry-perl
 libfile-mimeinfo-perl
@@ -126,6 +124,8 @@ dnsutils
 elementary-xfce-icon-theme
 exo-utils
 
+libfcitx-qt5-data
+libfcitx-qt5-1
 fcitx-config-gtk
 fcitx-frontend-gtk2
 fcitx-frontend-gtk3
@@ -501,8 +501,6 @@ qtqr
 ncftp
 tnftp
 libspdlog1
-libfcitx-qt5-data
-libfcitx-qt5-1
 firmware-sof-signed
 wireless-regdb
 smartmontools
