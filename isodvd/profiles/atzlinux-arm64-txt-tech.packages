@@ -210,4 +210,5 @@ edid-decode
 opengnb
 squashfuse
 links
+libncurses-dev
 dists-bullseye-files-contents-atzlinux
