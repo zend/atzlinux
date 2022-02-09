@@ -298,13 +298,8 @@ thunderbird-l10n-zh-cn
 hddtemp
 synaptic
 pavucontrol
-electronic-wechat
 linuxqq
 libqt5quickwidgets5
-sogoupinyin
-baidunetdisk
-netease-cloud-music
-youdao-dict
 wps-office
 wps-office-fonts
 task-mate-desktop
@@ -410,8 +405,6 @@ lzip
 ncompress
 filezilla
 dia
-reciteword
-libesd0
 libaudio-scrobbler-perl
 mpg321
 vlc-l10n
@@ -439,11 +432,8 @@ gdebi
 pulseaudio
 firejail
 cnapp-desktop-icons-atzlinux
-dingtalk
-wiznote
 vim-gtk3
 vim-gtk
-tenvideo-universal
 transmission-gtk
 fonts-arphic-gbsn00lp
 fonts-arphic-gkai00mp
@@ -456,10 +446,8 @@ xfce-atzlinux
 usermode
 gnome-control-center
 unar
-sysbro
 mtr
 ttf-mscorefonts-atzlinux
-gmchess
 xiangqi-mimetypes
 kigo
 gnugo

@@ -120,13 +120,8 @@ chromium-l10n
 thunderbird-l10n-zh-cn
 hddtemp
 pavucontrol
-electronic-wechat
 linuxqq
 libqt5quickwidgets5
-sogoupinyin
-baidunetdisk
-netease-cloud-music
-youdao-dict
 wps-office
 wps-office-fonts
 bash-completion
@@ -152,8 +147,6 @@ lzip
 ncompress
 filezilla
 dia
-reciteword
-libesd0
 libaudio-scrobbler-perl
 mpg321
 vlc-l10n
@@ -179,11 +172,8 @@ tlp
 gdebi
 pulseaudio
 firejail
-dingtalk
-wiznote
 vim-gtk3
 vim-gtk
-tenvideo-universal
 transmission-gtk
 fonts-arphic-gbsn00lp
 fonts-arphic-gkai00mp
@@ -197,7 +187,6 @@ atzlinux-archive-keyring
 unar
 mtr
 ttf-mscorefonts-atzlinux
-gmchess
 xiangqi-mimetypes
 gimp
 xdg-user-dirs
