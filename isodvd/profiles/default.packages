@@ -15,3 +15,5 @@ atzlinux-archive-keyring
 # kernel
 linux-image-rt-arm64
 linux-image-5.15.0-0.bpo.2-rt-arm64
+
+locales
