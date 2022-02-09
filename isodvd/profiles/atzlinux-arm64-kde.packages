@@ -29,6 +29,7 @@ fcitx-googlepinyin
 fcitx-table
 fcitx-table-wbpy
 fcitx-table-wubi
+kde-config-fcitx
 
 zenity
 im-config
