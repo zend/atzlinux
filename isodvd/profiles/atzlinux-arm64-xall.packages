@@ -315,6 +315,7 @@ libgail-common
 blueman
 ipheth-utils
 usbmuxd
+fuse3
 ifuse
 deepin-terminal
 deepin-movie

@@ -206,6 +206,7 @@ lunar
 gftp
 p7zip-full
 ntfs-3g
+fuse3
 exfat-fuse
 network-manager-vpnc-gnome
 vlc
