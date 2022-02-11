@@ -98,3 +98,6 @@ firmware-zd1211
 # only put in iso
 openssh-server
 bullseye-apt-atzlinux
+add-deepin-apt-source
+add-kylin-apt-source
+add-redflag-arm64-apt-source
