@@ -1,0 +1,18 @@
+#!/bin/sh
+lb config noauto \
+  --architectures amd64 \
+  --binary-images iso \
+  --mirror-binary https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-bootstrap https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-chroot https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-debian-installer https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-debian-installer https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-binary https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-bootstrap https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-chroot https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-binary-security https://mirrors.ustc.edu.cn/debian-security/ \
+  --parent-mirror-binary-security https://mirrors.ustc.edu.cn/debian-security/ \
+  --mirror-chroot-security https://mirrors.ustc.edu.cn/debian-security/ \
+  --parent-mirror-chroot-security https://mirrors.ustc.edu.cn/debian-security/ \
+  "${@}"
+
