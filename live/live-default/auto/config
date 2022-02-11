@@ -1,7 +1,8 @@
 #!/bin/sh
 lb config noauto \
   --architectures amd64 \
-  --binary-images iso \
+  --binary-images iso-hybrid \
+  --bootappend-live "boot=live components quiet splash username=wo" \
   --mirror-binary https://mirrors.ustc.edu.cn/debian/ \
   --mirror-bootstrap https://mirrors.ustc.edu.cn/debian/ \
   --mirror-chroot https://mirrors.ustc.edu.cn/debian/ \
