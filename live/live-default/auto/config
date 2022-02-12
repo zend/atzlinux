@@ -1,11 +1,18 @@
 #!/bin/sh
 lb config noauto \
   --architectures amd64 \
+  --distribution buster \
+  --parent-distribution buster \
+  --parent-distribution-binary buster \
+  --parent-distribution-chroot buster \
   --binary-images iso-hybrid \
   --bootappend-live "boot=live components quiet splash username=wo" \
+  --archive-areas "main contrib non-free" \
+  --parent-archive-areas "main contrib non-free" \
   --mirror-binary https://mirrors.ustc.edu.cn/debian/ \
   --mirror-bootstrap https://mirrors.ustc.edu.cn/debian/ \
   --mirror-chroot https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-chroot https://apt.atzlinux.com/atzlinux \
   --parent-mirror-debian-installer https://mirrors.ustc.edu.cn/debian/ \
   --mirror-debian-installer https://mirrors.ustc.edu.cn/debian/ \
   --parent-mirror-binary https://mirrors.ustc.edu.cn/debian/ \
@@ -15,5 +22,6 @@ lb config noauto \
   --parent-mirror-binary-security https://mirrors.ustc.edu.cn/debian-security/ \
   --mirror-chroot-security https://mirrors.ustc.edu.cn/debian-security/ \
   --parent-mirror-chroot-security https://mirrors.ustc.edu.cn/debian-security/ \
+  --backports true \
   "${@}"
 
