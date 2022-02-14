@@ -382,4 +382,5 @@ app.web.youdao.dict
 app.web.163.mail
 app.web.163.music
 app.web.kugou
+com.alibabainc.dingtalk
 dists-bullseye-files-atzlinux
