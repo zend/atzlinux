@@ -366,7 +366,6 @@ linuxqq
 #baidunetdisk
 #netease-cloud-music
 #youdao-dict
-#gmchess
 #dingtalk
 #wiznote
 #tenvideo-universal
@@ -378,4 +377,5 @@ opengnb
 com.baidu.baidunetdisk
 liblunar-calendar-gtk3-module
 lunar-date
+gmchess
 dists-bullseye-files-atzlinux
