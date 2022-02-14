@@ -544,4 +544,5 @@ app.web.163.mail
 app.web.163.music
 app.web.kugou
 com.alibabainc.dingtalk
+com.github.yesplaymusic
 dists-bullseye-files-dep11-atzlinux
