@@ -1,0 +1,9 @@
+在 iso 里面使用 Debian testing bookworm 版本
+
+下列【新】软件包将被安装：
+  gcc-11-base libffi8 libjsoncpp25
+下列软件包将被升级：
+  chromium chromium-common libc-bin libc-l10n libc6 libfreetype6 libstdc++6 libwayland-client0 locales
+
+chromium --version
+Chromium 98.0.4758.80 built on Debian bookworm/sid, running on Debian 11.2
