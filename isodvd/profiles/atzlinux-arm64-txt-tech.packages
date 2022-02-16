@@ -57,6 +57,7 @@ lftp
 lunar
 p7zip-full
 disktype
+fuse3
 ntfs-3g
 exfat-fuse
 vpnc
