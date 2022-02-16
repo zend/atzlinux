@@ -312,7 +312,6 @@ xfonts-wqy
 bash-completion
 libgail-common
 blueman
-ipheth-utils
 usbmuxd
 fuse3
 ifuse
@@ -369,7 +368,6 @@ mate-icon-theme
 mate-power-manager
 apparmor
 dnsmasq-base
-dosfstools
 enchant-2
 krb5-locales
 libgdk-pixbuf2.0-bin
@@ -455,7 +453,6 @@ fonts-noto-cjk
 fonts-noto-color-emoji
 gnome-disk-utility
 gvfs-fuse
-ifuse
 ipheth-utils
 gvfs-backends
 simplescreenrecorder
