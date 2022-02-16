@@ -429,7 +429,6 @@ python3-cffi-backend
 gdebi
 pulseaudio
 firejail
-cnapp-desktop-icons-atzlinux
 vim-gtk3
 vim-gtk
 transmission-gtk
@@ -541,4 +540,5 @@ app.web.kugou
 com.alibabainc.dingtalk
 com.github.yesplaymusic
 app.web.baidu.map
+cnapp-desktop-icons-atzlinux
 dists-bullseye-files-dep11-atzlinux
