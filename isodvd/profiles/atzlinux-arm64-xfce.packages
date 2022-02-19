@@ -276,7 +276,6 @@ gnome-disk-utility
 gvfs-fuse
 ifuse
 ipheth-utils
-atzlinux-update-patch
 atzlinux-update-patch-xfce
 gnome-calculator
 gvfs-backends
