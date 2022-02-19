@@ -5,6 +5,7 @@ firmware-linux-free
 firmware-misc-nonfree
 firmware-realtek
 bluez-firmware
+fuse3
 file
 psmisc
 gpm
@@ -57,7 +58,6 @@ lftp
 lunar
 p7zip-full
 disktype
-fuse3
 ntfs-3g
 exfat-fuse
 vpnc

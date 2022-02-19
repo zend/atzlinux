@@ -6,6 +6,7 @@ firmware-misc-nonfree
 firmware-realtek
 firmware-brcm80211
 bluez-firmware
+fuse3
 libaacs0
 libabw-0.1-1
 libao4
@@ -313,7 +314,6 @@ bash-completion
 libgail-common
 blueman
 usbmuxd
-fuse3
 ifuse
 deepin-terminal
 deepin-movie

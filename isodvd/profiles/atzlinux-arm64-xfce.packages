@@ -5,6 +5,7 @@ firmware-linux-free
 firmware-misc-nonfree
 firmware-realtek
 bluez-firmware
+fuse3
 arc-theme
 at-spi2-core
 ayatana-indicator-session
@@ -204,7 +205,6 @@ chromium-sandbox
 lunar
 gftp
 p7zip-full
-fuse3
 ntfs-3g
 exfat-fuse
 network-manager-vpnc-gnome
