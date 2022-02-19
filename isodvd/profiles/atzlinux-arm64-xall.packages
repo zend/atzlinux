@@ -462,7 +462,6 @@ gthumb
 krdc
 atzlinux-archive-keyring
 atzlinux-store-a11
-atzlinux-update-patch-xall
 ibus
 ibus-sunpinyin
 ibus-libpinyin
@@ -529,8 +528,8 @@ edid-decode
 fonts-lxgw-wenkai
 opengnb
 com.baidu.baidunetdisk
-liblunar-calendar-gtk3-module
 lunar-date
+liblunar-calendar-gtk3-module
 gmchess
 app.web.youdao.dict
 app.web.163.mail
@@ -539,7 +538,6 @@ app.web.kugou
 com.alibabainc.dingtalk
 com.github.yesplaymusic
 app.web.baidu.map
-cnapp-desktop-icons-atzlinux
 gconf-service
 gconf2-common
 kactivities-bin
@@ -554,4 +552,6 @@ libkf5su-bin
 libkf5su-data
 libkf5su5
 libkworkspace5-5
+cnapp-desktop-icons-atzlinux
+atzlinux-update-patch-xall
 dists-bullseye-files-dep11-atzlinux
