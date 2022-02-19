@@ -276,7 +276,6 @@ gnome-disk-utility
 gvfs-fuse
 ifuse
 ipheth-utils
-atzlinux-update-patch-xfce
 gnome-calculator
 gvfs-backends
 simplescreenrecorder
@@ -370,7 +369,6 @@ linuxqq
 #sysbro
 fonts-lxgw-wenkai
 opengnb
-com.baidu.baidunetdisk
 liblunar-calendar-gtk3-module
 lunar-date
 gmchess
@@ -381,7 +379,6 @@ app.web.kugou
 com.alibabainc.dingtalk
 com.github.yesplaymusic
 app.web.baidu.map
-cnapp-desktop-icons-atzlinux
 gconf-service
 gconf2-common
 kactivities-bin
@@ -396,4 +393,7 @@ libkf5su-bin
 libkf5su-data
 libkf5su5
 libkworkspace5-5
+atzlinux-update-patch-xfce
+com.baidu.baidunetdisk
+cnapp-desktop-icons-atzlinux
 dists-bullseye-files-atzlinux

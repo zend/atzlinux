@@ -297,7 +297,6 @@ linux-headers-rt-arm64
 edid-decode
 fonts-lxgw-wenkai
 opengnb
-com.baidu.baidunetdisk
 lunar-date
 liblunar-calendar-gtk3-module
 gmchess
@@ -324,4 +323,5 @@ libkf5su5
 libkworkspace5-5
 cnapp-desktop-icons-kde-atzlinux
 atzlinux-update-patch-kde
+com.baidu.baidunetdisk
 dists-bullseye-files-atzlinux
