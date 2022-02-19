@@ -377,7 +377,6 @@ app.web.163.mail
 app.web.163.music
 app.web.kugou
 com.alibabainc.dingtalk
-com.github.yesplaymusic
 app.web.baidu.map
 gconf-service
 gconf2-common
@@ -396,4 +395,5 @@ libkworkspace5-5
 atzlinux-update-patch-xfce
 com.baidu.baidunetdisk
 cnapp-desktop-icons-atzlinux
+com.github.yesplaymusic
 dists-bullseye-files-atzlinux
