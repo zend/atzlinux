@@ -308,4 +308,6 @@ iptux
 distro-info-data
 fonts-jetbrains-mono
 nvme-cli
+dists-bullseye-files-dep11-atzlinux
+plasma-discover
 dists-buster-files-atzlinux

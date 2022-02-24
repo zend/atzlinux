@@ -320,6 +320,8 @@ libkf5su-bin
 libkf5su-data
 libkf5su5
 libkworkspace5-5
+dists-bullseye-files-dep11-atzlinux
+plasma-discover
 atzlinux-update-patch-kde
 com.baidu.baidunetdisk
 com.github.yesplaymusic
