@@ -183,7 +183,6 @@ reprotest
 apt-file
 nvme-cli
 libsodium23
-linux-image-5.15.0-0.bpo.3-rt-arm64
 edid-decode
 opengnb
 squashfuse
