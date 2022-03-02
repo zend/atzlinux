@@ -522,7 +522,6 @@ nvme-cli
 libsodium23
 dists-bullseye-files-atzlinux
 gpustat
-linux-headers-rt-arm64
 edid-decode
 fonts-lxgw-wenkai
 opengnb

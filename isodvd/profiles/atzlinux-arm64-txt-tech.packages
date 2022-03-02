@@ -121,7 +121,6 @@ libdebian-installer4-dev
 zstd
 fcitx-pinyin
 fcitx-frontend-fbterm
-linux-headers-rt-arm64
 perl-openssl-defaults
 libnet-ssleay-perl
 libio-socket-ssl-perl

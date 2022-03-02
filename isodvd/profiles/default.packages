@@ -15,7 +15,9 @@ atzlinux-v11-archive-keyring
 # Debian bullseye apt
 bullseye-apt-atzlinux
 # kernel
-linux-image-5.15.0-0.bpo.3-arm64
 linux-image-arm64
+linux-image-5.15.0-0.bpo.3-arm64
+linux-headers-arm64
+linux-headers-5.15.0-0.bpo.3-arm64
 
 locales
