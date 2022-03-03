@@ -202,4 +202,5 @@ libssl-dev
 libelf-dev
 atzlinux-update-patch-txt-tech
 dists-bullseye-files-atzlinux
+dkms
 dists-bullseye-files-contents-atzlinux
