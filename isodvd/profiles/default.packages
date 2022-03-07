@@ -21,6 +21,7 @@ linux-headers-arm64
 linux-headers-5.15.0-0.bpo.3-arm64
 
 # kernel driver made by atzlinux
+dkms
 at803x-modules-5.10.0-11-arm64
 stmmac-modules-5.10.0-11-arm64
 
