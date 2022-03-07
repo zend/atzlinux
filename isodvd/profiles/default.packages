@@ -16,9 +16,7 @@ atzlinux-v11-archive-keyring
 bullseye-apt-atzlinux
 # kernel
 linux-image-arm64
-linux-image-5.15.0-0.bpo.3-arm64
 linux-headers-arm64
-linux-headers-5.15.0-0.bpo.3-arm64
 
 # kernel driver made by atzlinux
 dkms
