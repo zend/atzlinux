@@ -1,3 +1,7 @@
+# kernel driver made by atzlinux
+at803x-dkms
+stmmac-dkms
+
 # keep grub-pc and grub-efi or debian-installer may not work properly on
 # i386/amd64.
 

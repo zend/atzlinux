@@ -2,3 +2,8 @@ eatmydata-udeb
 
 # the udeb needed for simple-cdd
 simple-cdd-profiles
+
+# at803x support acpi
+at803x-modules-5.10.0-10-arm64-di
+# stmmac used by phytium
+stmmac-modules-5.10.0-10-arm64-di
