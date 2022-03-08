@@ -274,7 +274,7 @@ grub-installer  grub-installer/choose_bootdev   select
 # Use the following option to add additional boot parameters for the
 # installed system (if supported by the bootloader installer).
 # Note: options passed to the installer will be added automatically.
-#d-i debian-installer/add-kernel-opts string nousb
+d-i debian-installer/add-kernel-opts string console=tty0
 
 ### Finishing up the installation
 # During installations from serial console, the regular virtual consoles
