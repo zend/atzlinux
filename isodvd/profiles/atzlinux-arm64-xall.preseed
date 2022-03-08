@@ -248,7 +248,7 @@ d-i grub-installer/bootdev  string
 # 是否强制将 GRUB 安装到 EFI 可移动媒体路径？
 grub-installer  grub-installer/force-efi-extra-removable        boolean true
 # Force extra installation to the EFI removable media path?
-grub-efi-amd64	grub2/force_efi_extra_removable	boolean	true
+grub-efi-arm64	grub2/force_efi_extra_removable	boolean	true
 
 # 将 GRUB 启动引导程序安装到 SATA RAID 磁盘吗？
 grub-installer  grub-installer/sataraid boolean true
