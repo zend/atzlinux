@@ -12,6 +12,8 @@ console-setup
 keyboard-configuration
 # atzlinux project apt key
 atzlinux-v11-archive-keyring
+# atzlinux arm64 arch patch
+atzlinux-update-patch-arm64
 # Debian bullseye apt
 bullseye-apt-atzlinux
 # kernel
