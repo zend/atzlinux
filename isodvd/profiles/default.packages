@@ -22,7 +22,7 @@ linux-headers-arm64
 
 # kernel driver made by atzlinux
 dkms
-stmmac-modules-5.10.0-11-arm64
-at803x-modules-5.10.0-11-arm64
+stmmac-modules-5.10.0-12-arm64
+at803x-modules-5.10.0-12-arm64
 
 locales
