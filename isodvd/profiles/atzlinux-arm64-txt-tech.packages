@@ -202,4 +202,6 @@ libssl-dev
 libelf-dev
 atzlinux-update-patch-txt-tech
 dists-bullseye-files-atzlinux
+cpuid
+memtester
 dists-bullseye-files-contents-atzlinux
