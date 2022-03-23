@@ -9,6 +9,7 @@ xserver-xorg-video-intel
 iw
 wireless-tools
 network-manager
+network-manager-gnome
 
 wget
 sudo
