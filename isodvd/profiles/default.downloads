@@ -1,5 +1,4 @@
 # kernel driver made by atzlinux
-at803x-dkms
 stmmac-dkms
 gpio-phytium-dkms
 

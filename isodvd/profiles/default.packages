@@ -23,7 +23,6 @@ linux-headers-arm64
 # kernel driver made by atzlinux
 dkms
 stmmac-modules-5.10.0-12-arm64
-at803x-modules-5.10.0-12-arm64
 gpio-phytium-modules-5.10.0-12-arm64
 
 locales
