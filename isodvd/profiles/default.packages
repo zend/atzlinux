@@ -26,3 +26,5 @@ stmmac-modules-5.10.0-13-arm64
 gpio-phytium-modules-5.10.0-13-arm64
 
 locales
+
+systemd-timesyncd
