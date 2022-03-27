@@ -22,3 +22,5 @@ linux-headers-amd64
 dkms
 
 locales
+
+systemd-timesyncd
