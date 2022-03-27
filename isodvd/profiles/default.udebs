@@ -4,8 +4,8 @@ eatmydata-udeb
 simple-cdd-profiles
 
 # stmmac used by phytium
-stmmac-modules-5.10.0-10-arm64-di
+stmmac-modules-5.10.0-13-arm64-di
 
 atzlinux-update-patch-arm64-udeb
 
-gpio-phytium-modules-5.10.0-10-arm64-di
+gpio-phytium-modules-5.10.0-13-arm64-di
