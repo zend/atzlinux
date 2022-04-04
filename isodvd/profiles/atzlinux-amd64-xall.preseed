@@ -240,6 +240,9 @@ d-i grub-installer/with_other_os boolean true
 # To install to the first device (assuming it is not a USB stick):
 d-i grub-installer/bootdev  string
 
+# Choices: Enter device manually,
+grub-installer  grub-installer/choose_bootdev   select
+
 # 是否强制将 GRUB 安装到 EFI 可移动媒体路径？
 grub-installer  grub-installer/force-efi-extra-removable        boolean true
 # Force extra installation to the EFI removable media path?
