@@ -380,4 +380,5 @@ iptux
 distro-info-data
 fonts-jetbrains-mono
 firmware-b43-atzlinux
+edid-decode
 dists-buster-files-atzlinux
