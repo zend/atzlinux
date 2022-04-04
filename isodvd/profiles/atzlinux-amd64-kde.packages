@@ -320,4 +320,5 @@ lunar-date
 nvme-cli
 opengnb
 liblunar-calendar-gtk3-module
+plasma-discover
 dists-buster-files-atzlinux
