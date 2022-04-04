@@ -181,7 +181,7 @@ tlp
 gdebi
 pulseaudio
 firejail
-dingtalk
+com.alibabainc.dingtalk
 wiznote
 vim-gtk3
 vim-gtk
