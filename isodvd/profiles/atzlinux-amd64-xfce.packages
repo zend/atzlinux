@@ -385,4 +385,5 @@ gnome-sound-recorder
 lunar-date
 nvme-cli
 opengnb
+liblunar-calendar-gtk3-module
 dists-buster-files-atzlinux
