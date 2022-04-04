@@ -15,8 +15,7 @@ atzlinux-archive-keyring
 # Debian buster apt
 buster-apt-atzlinux
 # kernel
-linux-image-amd64
-linux-headers-amd64
+linux-image-rt-amd64
 
 # kernel driver made by atzlinux
 dkms
