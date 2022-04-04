@@ -207,4 +207,5 @@ debhelper
 libssl-dev
 libelf-dev
 atzlinux-update-patch-txt-tech
+memtester
 dists-buster-files-atzlinux
