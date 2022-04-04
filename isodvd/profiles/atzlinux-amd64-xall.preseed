@@ -321,3 +321,12 @@ d-i apt-setup/local1/comment string security apt source
 d-i apt-setup/cdrom/set-first boolean	false
 
 apt-cdrom-setup apt-setup/disable-cdrom-entries boolean true
+
+### skip some annoying installation status notes
+
+# Avoid that last message about the install being complete.
+d-i finish-install/reboot_in_progress note
+# Avoid the introductory message.
+base-config base-config/intro note
+# Avoid the final message.
+base-config base-config/login note
