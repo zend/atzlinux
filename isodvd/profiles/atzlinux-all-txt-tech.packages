@@ -181,7 +181,7 @@ bc
 netscripts-atzlinux
 firmware-atheros
 hw-probe
-linux-perf-4.19
+linux-perf
 lm-sensors
 manpages
 manpages-dev
