@@ -398,7 +398,6 @@ mate-icon-theme-faenza
 mate-power-manager
 apparmor
 dnsmasq-base
-dosfstools
 enchant
 krb5-locales
 libgdk-pixbuf2.0-bin
