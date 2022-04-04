@@ -318,4 +318,5 @@ edid-decode
 fonts-lxgw-wenkai
 gnome-sound-recorder
 lunar-date
+nvme-cli
 dists-buster-files-atzlinux
