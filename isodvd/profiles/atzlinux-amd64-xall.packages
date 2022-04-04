@@ -503,7 +503,6 @@ linux-headers-rt-amd64
 pulseaudio-module-bluetooth
 gthumb
 krdc
-atzlinux-archive-keyring
 atzlinux-store
 atzlinux-update-patch-xall
 ibus
