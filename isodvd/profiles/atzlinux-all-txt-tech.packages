@@ -144,7 +144,6 @@ fonts-wqy-zenhei
 firmware-brcm80211
 eject
 acpi
-libdebhelper-perl
 dh-runit
 dh-make-perl
 debmake
