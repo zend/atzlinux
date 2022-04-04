@@ -12,3 +12,8 @@ console-setup
 keyboard-configuration
 # atzlinux project apt key
 atzlinux-archive-keyring
+# Debian buster apt
+buster-apt-atzlinux
+# kernel
+linux-image-amd64
+linux-headers-amd64
