@@ -381,4 +381,5 @@ distro-info-data
 fonts-jetbrains-mono
 firmware-b43-atzlinux
 edid-decode
+fonts-lxgw-wenkai
 dists-buster-files-atzlinux
