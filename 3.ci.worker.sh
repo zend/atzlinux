@@ -10,4 +10,5 @@ cd $CMD_PATH
 apt install simple-cdd -y
 cd isodvd
 rm -rf tmp/mirror/db/lockfile
+set -e
 ./amd64.build.sh
