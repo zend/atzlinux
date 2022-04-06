@@ -1,7 +1,7 @@
-1.jihu.build:
+1.build:
   stage: build
   tags:
-    - shell-atzlinux-jihu
+    - shell-atzlinux
   script:
     - unset DOCKER_HOST
     - ./1.ci.caller.sh
