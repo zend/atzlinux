@@ -1,0 +1,8 @@
+# 1 开发环境
+1.build:
+  stage: build
+  tags:
+    - shell-atzlinux
+  script:
+    - unset DOCKER_HOST
+    - ./1.ci.caller.sh
