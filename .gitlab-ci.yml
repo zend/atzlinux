@@ -1,8 +1,7 @@
-# 1 开发环境
-1.build:
+1.jihu.build:
   stage: build
   tags:
-    - shell-atzlinux
+    - shell-atzlinux-jihu
   script:
     - unset DOCKER_HOST
     - ./1.ci.caller.sh
