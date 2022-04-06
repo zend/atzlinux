@@ -1,4 +1,4 @@
-# 持续继承构建状态
+# 持续集成构建状态
 
 [![pipeline status](https://jihulab.com/act365/atzlinux/debian-cn/badges/ci-build-jihu/pipeline.svg)](https://jihulab.com/act365/atzlinux/debian-cn/-/commits/ci-build-jihu)
 
