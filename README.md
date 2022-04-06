@@ -1,3 +1,9 @@
+# 持续集成构建状态
+
+[![pipeline status](https://jihulab.com/act365/atzlinux/debian-cn/badges/ci-build-jihu/pipeline.svg)](https://jihulab.com/act365/atzlinux/debian-cn/-/commits/ci-build-jihu)
+
+* 构建历史日志: https://jihulab.com/act365/atzlinux/debian-cn/-/pipelines
+
 # 《铜豌豆 Linux》-- 中文 Linux 桌面操作系统
 ![《铜豌豆 Linux》图标](https://cdn.atzlinux.com/pics/logo/atzlinux_144x144.png)
 
