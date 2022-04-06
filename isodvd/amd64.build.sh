@@ -12,6 +12,6 @@ build-simple-cdd --force-root \
 --dist buster \
 --locale zh_CN \
 --keyboard us  \
---security-mirror ${atzlinux_debian_mirror_extra} \
+--security-mirror ${atzlinux_debian_security_mirror} \
 --debian-mirror ${atzlinux_debian_mirror}  \
 -b amd64.build
