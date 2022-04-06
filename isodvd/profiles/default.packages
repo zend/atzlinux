@@ -12,10 +12,13 @@ console-setup
 keyboard-configuration
 # atzlinux project apt key
 atzlinux-archive-keyring
+# atzlinux patch
+atzlinux-update-patch
 # Debian buster apt
 buster-apt-atzlinux
 # kernel
 linux-image-rt-amd64
+linux-image-5.10.0-0.bpo.12-rt-amd64
 
 # kernel driver made by atzlinux
 dkms
