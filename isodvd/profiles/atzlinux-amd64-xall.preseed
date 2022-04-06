@@ -101,7 +101,7 @@ d-i netcfg/wireless_wep string
 # If you select ftp, the mirror/country string does not need to be set.
 d-i mirror/protocol string https
 d-i mirror/country string manual
-d-i mirror/https/hostname string mirrors.cloud.tencent.com
+d-i mirror/https/hostname string mirrors.tencent.com
 d-i mirror/https/directory string /debian
 d-i mirror/https/proxy string
 
@@ -172,7 +172,7 @@ apt-mirror-setup        apt-setup/no_mirror     boolean true
 # Select which update services to use; define the mirrors to be used.
 # Values shown below are the normal defaults.
 d-i apt-setup/services-select multiselect updates, proposed-updates, backports
-#d-i apt-setup/security_host string mirrors.cloud.tencent.com
+#d-i apt-setup/security_host string mirrors.tencent.com
 
 # 启用 APT 源代码软件源？
 apt-setup-udeb  apt-setup/enable-source-repositories    boolean false
@@ -241,10 +241,19 @@ d-i grub-installer/bootdev  string
 # Choices: Enter device manually,
 grub-installer  grub-installer/choose_bootdev   select
 
+# GRUB 安装设备：
+# Choices:
+grub-pc grub-pc/install_devices multiselect
+
+# GRUB 安装设备：
+# Choices:
+grub-pc grub-pc/install_devices_disks_changed   multiselect
+
 # 是否强制将 GRUB 安装到 EFI 可移动媒体路径？
 grub-installer  grub-installer/force-efi-extra-removable        boolean true
 # Force extra installation to the EFI removable media path?
 grub-efi-amd64	grub2/force_efi_extra_removable	boolean	true
+grub-pc grub2/force_efi_extra_removable boolean true
 
 # Alternatively, if you want to install to a location other than the mbr,
 # uncomment and edit these lines:
@@ -328,7 +337,7 @@ d-i apt-setup/local0/repository string \
 d-i apt-setup/local0/comment string atzlinux.com desktop project apt source
 
 d-i apt-setup/local1/repository string \
-	deb https://mirrors.cloud.tencent.com/debian-security buster/updates main non-free contrib
+	deb https://mirrors.tencent.com/debian-security buster/updates main non-free contrib
 d-i apt-setup/local1/comment string security apt source
 
 # Downloading a file failed:
