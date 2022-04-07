@@ -1,4 +1,5 @@
 apt-transport-https
 software-properties-common
 opencc
+debconf-utils
 dists-buster-files-atzlinux
