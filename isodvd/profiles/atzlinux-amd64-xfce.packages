@@ -386,4 +386,5 @@ nvme-cli
 opengnb
 liblunar-calendar-gtk3-module
 google-chrome-stable
+dbus-x11
 dists-buster-files-atzlinux

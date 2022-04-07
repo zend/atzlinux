@@ -322,4 +322,5 @@ liblunar-calendar-gtk3-module
 plasma-discover
 google-chrome-stable
 dists-buster-files-dep11-atzlinux
+dbus-x11
 dists-buster-files-atzlinux
