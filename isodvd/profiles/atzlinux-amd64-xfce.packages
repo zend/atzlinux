@@ -1,6 +1,6 @@
 apt-transport-https
-firmware-atheros
 firmware-amd-graphics
+firmware-atheros
 firmware-b43-atzlinux
 firmware-brcm80211
 firmware-iwlwifi
