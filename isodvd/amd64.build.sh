@@ -2,7 +2,7 @@
 
 set -x
 
-export atzlinux_debian_mirror_extra=${atzlinux_debian_mirror_extra:="http://txy.atzlinux.com/atzlinux"}
+export atzlinux_debian_mirror_extra=${atzlinux_debian_mirror_extra:="https://apt.atzlinux.com/atzlinux"}
 export atzlinux_debian_security_mirror=${atzlinux_debian_security_mirror:="https://mirrors.huaweicloud.com/debian-security/ "}
 export atzlinux_debian_mirror=${atzlinux_debian_mirror:="https://mirrors.huaweicloud.com/debian/"}
 
