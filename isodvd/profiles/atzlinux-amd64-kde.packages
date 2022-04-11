@@ -1,9 +1,15 @@
 apt-transport-https
 firmware-amd-graphics
+firmware-atheros
+firmware-b43-atzlinux
+firmware-brcm80211
 firmware-iwlwifi
 firmware-linux-free
 firmware-misc-nonfree
 firmware-realtek
+firmware-sof-signed
+firmware-zd1211
+atmel-firmware
 bluez-firmware
 at-spi2-core
 ayatana-indicator-session
@@ -228,7 +234,6 @@ rar
 unrar
 linux-headers-rt-amd64
 pulseaudio-module-bluetooth
-firmware-brcm80211
 tumbler
 eject
 acpi
@@ -242,8 +247,6 @@ ibus-libpinyin
 openssh-client
 fonts-cns11643-kai
 grub-customizer
-firmware-zd1211
-atmel-firmware
 exfat-utils
 dosfstools
 info
@@ -292,7 +295,6 @@ libspdlog1
 libfcitx-qt5-data
 libfcitx-qt5-1
 fcitx-inputmethod-atzlinux
-firmware-sof-signed
 wireless-regdb
 smartmontools
 linux-cpupower
@@ -300,7 +302,6 @@ tlp-rdw
 sysstat
 bc
 netscripts-atzlinux
-firmware-atheros
 hw-probe
 lshw
 lm-sensors
@@ -311,7 +312,6 @@ neofetch
 iptux
 distro-info-data
 fonts-jetbrains-mono
-firmware-b43-atzlinux
 edid-decode
 fonts-lxgw-wenkai
 gnome-sound-recorder
