@@ -1,9 +1,13 @@
 apt-transport-https
 firmware-amd-graphics
+firmware-atheros
+firmware-brcm80211
 firmware-iwlwifi
 firmware-linux-free
 firmware-misc-nonfree
 firmware-realtek
+firmware-zd1211
+atmel-firmware
 bluez-firmware
 file
 psmisc
@@ -139,7 +143,6 @@ libmailtools-perl
 libnet-smtp-ssl-perl
 lintian
 fonts-wqy-zenhei
-firmware-brcm80211
 eject
 acpi
 dh-runit
@@ -151,8 +154,6 @@ dgit
 apt-listchanges
 xtail
 debsums
-firmware-zd1211
-atmel-firmware
 exfat-utils
 yiyantang
 git-buildpackage
@@ -176,7 +177,6 @@ arping
 sysstat
 bc
 netscripts-atzlinux
-firmware-atheros
 hw-probe
 linux-perf
 lm-sensors
