@@ -1,9 +1,3 @@
-# 持续集成构建状态
-
-[![pipeline status](https://jihulab.com/act365/atzlinux/debian-cn/badges/ci-build-jihu/pipeline.svg)](https://jihulab.com/act365/atzlinux/debian-cn/-/commits/ci-build-jihu)
-
-* 构建历史日志: https://jihulab.com/act365/atzlinux/debian-cn/-/pipelines
-
 # 《铜豌豆 Linux》-- 中文 Linux 桌面操作系统
 ![《铜豌豆 Linux》图标](https://cdn.atzlinux.com/pics/logo/atzlinux_144x144.png)
 
@@ -112,6 +106,12 @@ https://gitee.com/atzlinux/projects
 Debian 官方 git 仓库 https://salsa.debian.org ，有提交合并请求，并被吸收。
 
 推动 Debian 中文社区把 星际译王 软件，重新移植到 buster-backports
+
+# 持续集成构建状态
+
+[![pipeline status](https://jihulab.com/act365/atzlinux/debian-cn/badges/ci-build-jihu/pipeline.svg)](https://jihulab.com/act365/atzlinux/debian-cn/-/commits/ci-build-jihu)
+
+* 构建历史日志: https://jihulab.com/act365/atzlinux/debian-cn/-/pipelines
 
 ## 历程
 
