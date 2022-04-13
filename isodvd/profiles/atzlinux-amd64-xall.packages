@@ -553,6 +553,7 @@ firmware-atheros
 hw-probe
 gnome-shell-extension-appindicator
 gnome-tweak-tool
+gnome-shell-extension-top-icons-plus
 lshw
 lm-sensors
 xinput
