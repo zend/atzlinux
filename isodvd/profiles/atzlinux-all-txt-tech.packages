@@ -210,4 +210,5 @@ libelf-dev
 atzlinux-update-patch-txt-tech
 memtester
 linux-headers-5.10.0-0.bpo.12-rt-amd64
+cu
 dists-buster-files-atzlinux
