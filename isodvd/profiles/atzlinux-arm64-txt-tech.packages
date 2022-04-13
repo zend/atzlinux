@@ -203,4 +203,5 @@ libelf-dev
 atzlinux-update-patch-txt-tech
 dists-bullseye-files-atzlinux
 memtester
+cu
 dists-bullseye-files-contents-atzlinux
