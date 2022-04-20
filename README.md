@@ -107,12 +107,6 @@ Debian 官方 git 仓库 https://salsa.debian.org ，有提交合并请求，并
 
 推动 Debian 中文社区把 星际译王 软件，重新移植到 buster-backports
 
-# 持续集成构建状态
-
-[![pipeline status](https://jihulab.com/act365/atzlinux/debian-cn/badges/ci-build-jihu/pipeline.svg)](https://jihulab.com/act365/atzlinux/debian-cn/-/commits/ci-build-jihu)
-
-* 构建历史日志: https://jihulab.com/act365/atzlinux/debian-cn/-/pipelines
-
 ## 历程
 
 铜豌豆 最开始在 2019 年 9 月在码云上创建了第一个仓库：
