@@ -308,4 +308,5 @@ fonts-jetbrains-mono
 nvme-cli
 dists-bullseye-files-dep11-atzlinux
 plasma-discover
+qml-module-org-kde-newstuff
 dists-buster-files-atzlinux
