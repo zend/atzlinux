@@ -13,3 +13,4 @@ for f in atzlinux-arm64-xall.packages atzlinux-arm64-xfce.packages atzlinux-arm6
 
 cat to-add
 wc -l to-add
+git diff .
