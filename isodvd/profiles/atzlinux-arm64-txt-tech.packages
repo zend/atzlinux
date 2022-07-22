@@ -142,7 +142,6 @@ xtail
 debsums
 firmware-zd1211
 atmel-firmware
-exfat-utils
 yiyantang
 git-buildpackage
 lz4
