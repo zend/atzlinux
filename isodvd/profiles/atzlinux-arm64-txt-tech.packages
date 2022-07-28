@@ -208,4 +208,5 @@ picocom
 linuxinfo
 pkg-kde-tools
 exfatprogs
+libblockdev-crypto2
 dists-bullseye-files-contents-atzlinux

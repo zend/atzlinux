@@ -397,4 +397,5 @@ gnome-sound-recorder
 gtkhash
 linuxinfo
 exfatprogs
+libblockdev-crypto2
 dists-bullseye-files-atzlinux

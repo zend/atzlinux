@@ -328,4 +328,5 @@ gtkhash
 qml-module-org-kde-newstuff
 linuxinfo
 exfatprogs
+libblockdev-crypto2
 dists-bullseye-files-atzlinux
