@@ -5,18 +5,13 @@ cd `dirname $0`; pwd
 
 echo '即将开始安装 ...'
 
-apt -y install \
-fcitx-config-common \
-fcitx-config-gtk \
-fcitx-frontend-all \
-fcitx-frontend-qt5 \
-fcitx-googlepinyin \
-fcitx-m17n \
-fcitx-module-x11 \
-fcitx-sunpinyin \
-fcitx-table-wubi \
-fcitx-table-wbpy \
-fcitx-ui-classic
+URL="http://cdn2.ime.sogou.com/dl/index/1571302197/sogoupinyin_2.3.1.0112_amd64.deb?st=x_sbxD4RrG1tvywaRYDD_Q&e=1571370757&fn=sogoupinyin_2.3.1.0112_amd64.deb"
+
+FILENAME=`echo $URL|awk -F "=" {'print $NF'}`
+
+wget -c -O $FILENAME $URL
+
+apt -y install ./$FILENAME
 
 apt -y install sogoupinyin
 
