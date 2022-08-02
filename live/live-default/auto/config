@@ -1,23 +1,30 @@
 #!/bin/sh
 lb config noauto \
   --architectures amd64 \
-  --distribution buster \
-  --parent-distribution buster \
-  --parent-distribution-binary buster \
-  --parent-distribution-chroot buster \
+  --distribution bullseye \
+  --parent-distribution bullseye \
+  --parent-distribution-binary bullseye \
+  --parent-distribution-chroot bullseye \
   --binary-images iso-hybrid \
   --bootappend-live "boot=live components quiet splash username=wo" \
   --archive-areas "main contrib non-free" \
   --parent-archive-areas "main contrib non-free" \
   --mirror-binary https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-binary https://apt.atzlinux.com/atzlinux \
   --mirror-bootstrap https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-bootstrap https://apt.atzlinux.com/atzlinux \
   --mirror-chroot https://mirrors.ustc.edu.cn/debian/ \
   --mirror-chroot https://apt.atzlinux.com/atzlinux \
   --parent-mirror-debian-installer https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-debian-installer https://apt.atzlinux.com/atzlinux \
   --mirror-debian-installer https://mirrors.ustc.edu.cn/debian/ \
+  --mirror-debian-installer https://apt.atzlinux.com/atzlinux \
   --parent-mirror-binary https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-binary https://apt.atzlinux.com/atzlinux \
   --parent-mirror-bootstrap https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-bootstrap https://apt.atzlinux.com/atzlinux \
   --parent-mirror-chroot https://mirrors.ustc.edu.cn/debian/ \
+  --parent-mirror-chroot https://apt.atzlinux.com/atzlinux \
   --mirror-binary-security https://mirrors.ustc.edu.cn/debian-security/ \
   --parent-mirror-binary-security https://mirrors.ustc.edu.cn/debian-security/ \
   --mirror-chroot-security https://mirrors.ustc.edu.cn/debian-security/ \

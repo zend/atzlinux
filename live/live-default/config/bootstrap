@@ -4,22 +4,22 @@
 LB_ARCHITECTURE="amd64"
 
 # Select distribution to use
-LB_DISTRIBUTION="buster"
+LB_DISTRIBUTION="bullseye"
 
 # Select parent distribution to use
-LB_PARENT_DISTRIBUTION="buster"
+LB_PARENT_DISTRIBUTION="bullseye"
 
 # Select distribution to use in the chroot
 LB_DISTRIBUTION_CHROOT="bullseye"
 
 # Select parent distribution to use in the chroot
-LB_PARENT_DISTRIBUTION_CHROOT="buster"
+LB_PARENT_DISTRIBUTION_CHROOT="bullseye"
 
 # Select distribution to use in the final image
 LB_DISTRIBUTION_BINARY="bullseye"
 
 # Select parent distribution to use in the final image
-LB_PARENT_DISTRIBUTION_BINARY="buster"
+LB_PARENT_DISTRIBUTION_BINARY="bullseye"
 
 # Select parent distribution for debian-installer to use
 LB_PARENT_DEBIAN_INSTALLER_DISTRIBUTION="bullseye"
@@ -31,25 +31,25 @@ LB_ARCHIVE_AREAS="main contrib non-free"
 LB_PARENT_ARCHIVE_AREAS="main contrib non-free"
 
 # Set parent mirror to bootstrap from
-LB_PARENT_MIRROR_BOOTSTRAP="https://mirrors.ustc.edu.cn/debian/"
+LB_PARENT_MIRROR_BOOTSTRAP="https://apt.atzlinux.com/atzlinux"
 
 # Set parent mirror to fetch packages from
-LB_PARENT_MIRROR_CHROOT="https://mirrors.ustc.edu.cn/debian/"
+LB_PARENT_MIRROR_CHROOT="https://apt.atzlinux.com/atzlinux"
 
 # Set security parent mirror to fetch packages from
 LB_PARENT_MIRROR_CHROOT_SECURITY="https://mirrors.ustc.edu.cn/debian-security/"
 
 # Set parent mirror which ends up in the image
-LB_PARENT_MIRROR_BINARY="https://mirrors.ustc.edu.cn/debian/"
+LB_PARENT_MIRROR_BINARY="https://apt.atzlinux.com/atzlinux"
 
 # Set security parent mirror which ends up in the image
 LB_PARENT_MIRROR_BINARY_SECURITY="https://mirrors.ustc.edu.cn/debian-security/"
 
 # Set debian-installer parent mirror
-LB_PARENT_MIRROR_DEBIAN_INSTALLER="https://mirrors.ustc.edu.cn/debian/"
+LB_PARENT_MIRROR_DEBIAN_INSTALLER="https://apt.atzlinux.com/atzlinux"
 
 # Set mirror to bootstrap from
-LB_MIRROR_BOOTSTRAP="https://mirrors.ustc.edu.cn/debian/"
+LB_MIRROR_BOOTSTRAP="https://apt.atzlinux.com/atzlinux"
 
 # Set mirror to fetch packages from
 LB_MIRROR_CHROOT="https://apt.atzlinux.com/atzlinux"
@@ -58,13 +58,13 @@ LB_MIRROR_CHROOT="https://apt.atzlinux.com/atzlinux"
 LB_MIRROR_CHROOT_SECURITY="https://mirrors.ustc.edu.cn/debian-security/"
 
 # Set mirror which ends up in the image
-LB_MIRROR_BINARY="https://mirrors.ustc.edu.cn/debian/"
+LB_MIRROR_BINARY="https://apt.atzlinux.com/atzlinux"
 
 # Set security mirror which ends up in the image
 LB_MIRROR_BINARY_SECURITY="https://mirrors.ustc.edu.cn/debian-security/"
 
 # Set debian-installer mirror
-LB_MIRROR_DEBIAN_INSTALLER="https://mirrors.ustc.edu.cn/debian/"
+LB_MIRROR_DEBIAN_INSTALLER="https://apt.atzlinux.com/atzlinux"
 
 # Set architectures to use foreign bootstrap
 LB_BOOTSTRAP_QEMU_ARCHITECTURE=""
