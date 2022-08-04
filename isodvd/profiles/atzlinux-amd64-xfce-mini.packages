@@ -56,4 +56,5 @@ opencc
 unzip
 zip
 ethtool
+cpufrequtils
 dists-buster-files-atzlinux

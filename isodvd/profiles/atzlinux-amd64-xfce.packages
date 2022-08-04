@@ -367,4 +367,5 @@ iptux
 distro-info-data
 fonts-jetbrains-mono
 nvme-cli
+cpufrequtils
 dists-buster-files-atzlinux

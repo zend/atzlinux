@@ -558,4 +558,5 @@ nautilus-extension-gnome-terminal
 linuxinfo
 exfatprogs
 libblockdev-crypto2
+cpufrequtils
 dists-bullseye-files-dep11-atzlinux

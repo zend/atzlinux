@@ -398,4 +398,5 @@ gtkhash
 linuxinfo
 exfatprogs
 libblockdev-crypto2
+cpufrequtils
 dists-bullseye-files-atzlinux

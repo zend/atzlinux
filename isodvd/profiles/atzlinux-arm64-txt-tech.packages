@@ -209,4 +209,5 @@ linuxinfo
 pkg-kde-tools
 exfatprogs
 libblockdev-crypto2
+cpufrequtils
 dists-bullseye-files-contents-atzlinux

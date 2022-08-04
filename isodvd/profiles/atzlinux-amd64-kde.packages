@@ -308,4 +308,5 @@ nvme-cli
 dists-bullseye-files-dep11-atzlinux
 plasma-discover
 qml-module-org-kde-newstuff
+cpufrequtils
 dists-buster-files-atzlinux
