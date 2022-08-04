@@ -390,4 +390,5 @@ linux-headers-5.10.0-0.bpo.12-rt-amd64
 gtkhash
 linuxinfo
 ksnip
+cpufrequtils
 dists-buster-files-atzlinux

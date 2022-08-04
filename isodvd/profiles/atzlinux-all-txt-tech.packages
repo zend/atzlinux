@@ -215,4 +215,5 @@ ccache
 picocom
 linuxinfo
 pkg-kde-tools
+cpufrequtils
 dists-buster-files-atzlinux
