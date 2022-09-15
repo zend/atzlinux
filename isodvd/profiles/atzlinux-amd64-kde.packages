@@ -322,7 +322,7 @@ plasma-discover
 google-chrome-stable
 dists-buster-files-dep11-atzlinux
 dbus-x11
-linux-headers-5.10.0-0.bpo.12-rt-amd64
+linux-headers-5.10.0-0.deb10.17-rt-amd64
 gtkhash
 qml-module-org-kde-newstuff
 linuxinfo
