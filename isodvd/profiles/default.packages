@@ -18,7 +18,7 @@ atzlinux-update-patch
 buster-apt-atzlinux
 # kernel
 linux-image-rt-amd64
-linux-image-5.10.0-0.bpo.12-rt-amd64
+linux-image-5.10.0-0.deb10.17-rt-amd64
 
 # kernel driver made by atzlinux
 dkms
