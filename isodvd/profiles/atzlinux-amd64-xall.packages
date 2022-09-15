@@ -580,6 +580,6 @@ gtkhash
 nautilus-extension-gnome-terminal
 linuxinfo
 cpufrequtils
-atzlinux-update-patch-xall
 dists-buster-files-atzlinux
 dists-buster-files-dep11-atzlinux
+atzlinux-update-patch-xall

@@ -325,6 +325,6 @@ gtkhash
 qml-module-org-kde-newstuff
 linuxinfo
 cpufrequtils
-atzlinux-update-patch-kde
 cnapp-desktop-icons-kde-atzlinux
 dists-buster-files-atzlinux
+atzlinux-update-patch-kde
