@@ -5,6 +5,10 @@ libeatmydata1
 # less is more intuituve
 less
 
+# default installed by debian-cd
+e2fslibs
+libcomerr2
+
 # add by atzlinux project
 kbd
 console-setup-linux
