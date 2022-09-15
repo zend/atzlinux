@@ -501,7 +501,6 @@ pulseaudio-module-bluetooth
 gthumb
 krdc
 atzlinux-store
-atzlinux-update-patch-xall
 ibus
 ibus-sunpinyin
 ibus-libpinyin
@@ -531,7 +530,6 @@ fortunes-zh
 zh-autoconvert
 unzip
 zip
-dists-buster-files-dep11-atzlinux
 tarlz
 ethtool
 qtqr
@@ -582,4 +580,6 @@ gtkhash
 nautilus-extension-gnome-terminal
 linuxinfo
 cpufrequtils
+atzlinux-update-patch-xall
 dists-buster-files-atzlinux
+dists-buster-files-dep11-atzlinux

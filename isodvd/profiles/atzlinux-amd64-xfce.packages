@@ -302,7 +302,6 @@ gnome-disk-utility
 gvfs-fuse
 ifuse
 ipheth-utils
-atzlinux-update-patch-xfce
 gnome-calculator
 gvfs-backends
 simplescreenrecorder
@@ -390,4 +389,5 @@ linux-headers-5.10.0-0.deb10.17-rt-amd64
 gtkhash
 linuxinfo
 cpufrequtils
+atzlinux-update-patch-xfce
 dists-buster-files-atzlinux

@@ -207,7 +207,6 @@ diffoscope
 debhelper
 libssl-dev
 libelf-dev
-atzlinux-update-patch-txt-tech
 memtester
 linux-headers-5.10.0-0.deb10.17-rt-amd64
 cu
@@ -216,4 +215,5 @@ picocom
 linuxinfo
 pkg-kde-tools
 cpufrequtils
+atzlinux-update-patch-txt-tech
 dists-buster-files-atzlinux

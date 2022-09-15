@@ -54,11 +54,11 @@ fcitx-frontend-qt5
 fcitx-frontend-all
 sogoupinyin
 pepperflashplugin-nonfree
-cnapp-desktop-icons-mini-atzlinux
-atzlinux-update-patch-xfce-mini
 policykit-1-gnome
 opencc
 unzip
 zip
 ethtool
+cnapp-desktop-icons-mini-atzlinux
+atzlinux-update-patch-xfce-mini
 dists-buster-files-atzlinux
