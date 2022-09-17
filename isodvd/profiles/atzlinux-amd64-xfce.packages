@@ -390,4 +390,7 @@ gtkhash
 linuxinfo
 cpufrequtils
 dists-buster-files-atzlinux
+fcitx-module-kimpanel
+libfcitx-qt0
+fcitx-libs
 atzlinux-update-patch-xfce

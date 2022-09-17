@@ -52,6 +52,9 @@ fcitx-frontend-gtk3
 fcitx-frontend-qt4
 fcitx-frontend-qt5
 fcitx-frontend-all
+fcitx-module-kimpanel
+libfcitx-qt0
+fcitx-libs
 sogoupinyin
 pepperflashplugin-nonfree
 policykit-1-gnome
