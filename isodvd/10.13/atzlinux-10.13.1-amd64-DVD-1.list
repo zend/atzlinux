@@ -40,7 +40,7 @@ reciteword_0.8.7-1_amd64.deb
 rar_5.5.0-1_amd64.deb
 linuxqq_2.0.0-b2_amd64.deb
 netease-cloud-music_1.2.1_amd64.deb
-wps-office_11.1.0.10920_amd64.deb
+wps-office_11.1.0.11664_amd64.deb
 wps-office-fonts_1.0_all.deb
 google-chrome-stable_105.0.5195.125-1_amd64.deb
 bluez-firmware_1.2-7_all.deb
@@ -1903,11 +1903,11 @@ libmediastreamer-base10_2.16.1-4+b1_amd64.deb
 libmtdev1_1.1.5-1+b1_amd64.deb
 libmtdev1-udeb_1.1.5-1+b1_amd64.udeb
 mate-icon-theme-faenza_1.20.0+dfsg1-2_all.deb
-mariadb-client-10.3_10.3.34-0+deb10u1_amd64.deb
-libmariadb3_10.3.34-0+deb10u1_amd64.deb
-mariadb-client-core-10.3_10.3.34-0+deb10u1_amd64.deb
-mariadb-server-core-10.3_10.3.34-0+deb10u1_amd64.deb
-mariadb-common_10.3.34-0+deb10u1_all.deb
+libmariadb3_10.3.36-0+deb10u1_amd64.deb
+mariadb-client-10.3_10.3.36-0+deb10u1_amd64.deb
+mariadb-server-core-10.3_10.3.36-0+deb10u1_amd64.deb
+mariadb-common_10.3.36-0+deb10u1_all.deb
+mariadb-client-core-10.3_10.3.36-0+deb10u1_amd64.deb
 libmatedict6_1.20.2-3_amd64.deb
 mate-utils-common_1.20.2-3_all.deb
 mate-utils_1.20.2-3_amd64.deb
@@ -2783,8 +2783,8 @@ libbotan-2-9_2.9.0-2_amd64.deb
 baloo-kf5_5.54.0-1_amd64.deb
 libkf5balooengine5_5.54.0-1_amd64.deb
 libkf5baloo5_5.54.0-1_amd64.deb
-bzip2_1.0.6-9.2~deb10u1_amd64.deb
-libbz2-1.0_1.0.6-9.2~deb10u1_amd64.deb
+bzip2_1.0.6-9.2~deb10u2_amd64.deb
+libbz2-1.0_1.0.6-9.2~deb10u2_amd64.deb
 libbctoolbox1_0.6.0-2+b2_amd64.deb
 haveged-udeb_1.9.1-7_amd64.udeb
 hwdata_0.290-1_all.deb
@@ -3077,7 +3077,7 @@ libevdev2-udeb_1.6.0+dfsg-1_amd64.udeb
 libevdev2_1.6.0+dfsg-1_amd64.deb
 libexporter-lite-perl_0.08-1_all.deb
 libencode-locale-perl_1.05-1_all.deb
-libraw19_0.19.2-2_amd64.deb
+libraw19_0.19.2-2+deb10u1_amd64.deb
 librest-0.7-0_0.8.1-1_amd64.deb
 libregexp-assemble-perl_0.36-1_all.deb
 libraw1394-11_2.1.2-1+b1_amd64.deb
