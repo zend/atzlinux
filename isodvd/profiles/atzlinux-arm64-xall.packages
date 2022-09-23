@@ -559,4 +559,5 @@ linuxinfo
 exfatprogs
 libblockdev-crypto2
 cpufrequtils
+manpages
 dists-bullseye-files-dep11-atzlinux
