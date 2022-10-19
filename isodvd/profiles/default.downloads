@@ -2,8 +2,8 @@
 stmmac-dkms
 gpio-phytium-dkms
 
-linux-headers-4.19.237-atzlinux-ft8
-linux-image-4.19.237-atzlinux-ft8
+linux-image-4.19.260-atzlinux-ft9
+linux-headers-4.19.260-atzlinux-ft9
 
 # keep grub-pc and grub-efi or debian-installer may not work properly on
 # i386/amd64.
