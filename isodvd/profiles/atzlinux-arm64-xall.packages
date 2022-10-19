@@ -560,4 +560,6 @@ exfatprogs
 libblockdev-crypto2
 cpufrequtils
 manpages
+libgsettings-qt1
+sogoupinyin
 dists-bullseye-files-dep11-atzlinux

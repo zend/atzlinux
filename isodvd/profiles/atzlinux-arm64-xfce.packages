@@ -353,7 +353,6 @@ edid-decode
 linuxqq
 #wechat
 #electronic-wechat
-#sogoupinyin
 #baidunetdisk
 #netease-cloud-music
 #youdao-dict
@@ -400,4 +399,6 @@ exfatprogs
 libblockdev-crypto2
 cpufrequtils
 manpages
+libgsettings-qt1
+sogoupinyin
 dists-bullseye-files-atzlinux
