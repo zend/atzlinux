@@ -1,5 +1,5 @@
 # kernel driver made by atzlinux
-stmmac-dkms
+stmmac-phytium-dkms
 gpio-phytium-dkms
 
 linux-image-4.19.260-atzlinux-ft9
