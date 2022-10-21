@@ -1,6 +1,7 @@
 # kernel driver made by atzlinux
 stmmac-phytium-dkms
 gpio-phytium-dkms
+ft8042-dkms
 
 linux-image-4.19.260-atzlinux-ft9
 linux-headers-4.19.260-atzlinux-ft9

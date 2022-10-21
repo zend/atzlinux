@@ -24,6 +24,7 @@ linux-headers-arm64
 dkms
 stmmac-phytium-modules-5.10.0-19-arm64
 gpio-phytium-modules-5.10.0-19-arm64
+ft8042-modules-5.10.0-19-arm64
 
 locales
 
