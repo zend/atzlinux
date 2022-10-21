@@ -2,6 +2,7 @@
 stmmac-phytium-dkms
 gpio-phytium-dkms
 ft8042-dkms
+gwnb-power-dkms
 
 linux-image-4.19.260-atzlinux-ft9
 linux-headers-4.19.260-atzlinux-ft9
