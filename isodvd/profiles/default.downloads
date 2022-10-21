@@ -5,6 +5,7 @@ ft8042-dkms
 
 linux-image-4.19.260-atzlinux-ft9
 linux-headers-4.19.260-atzlinux-ft9
+ft8042-modules-4.19.260-atzlinux-ft9
 
 # keep grub-pc and grub-efi or debian-installer may not work properly on
 # i386/amd64.
