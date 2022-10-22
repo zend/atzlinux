@@ -110,9 +110,12 @@ d-i netcfg/wireless_wep string
 # If you select ftp, the mirror/country string does not need to be set.
 d-i mirror/protocol string https
 d-i mirror/country string manual
-d-i mirror/https/hostname string mirrors.bfsu.edu.cn
+d-i mirror/https/hostname string mirrors.tencent.com
 d-i mirror/https/directory string /debian
 d-i mirror/https/proxy string
+
+# Debian 仓库镜像所在的国家：
+choose-mirror-bin       mirror/http/countries   select  CN
 
 # Suite to install.
 #d-i mirror/suite string testing
@@ -180,9 +183,11 @@ d-i apt-setup/contrib boolean true
 apt-mirror-setup        apt-setup/no_mirror     boolean true
 # Select which update services to use; define the mirrors to be used.
 # Values shown below are the normal defaults.
-d-i apt-setup/services-select multiselect updates, proposed-updates, backports
+d-i apt-setup/services-select multiselect
+apt-setup-udeb apt-setup/services-select       multiselect
+d-i apt-setup/security_host string mirrors.tencent.com
+apt-setup-udeb apt-setup/security_host string mirrors.tencent.com
 
-apt-setup-udeb apt-setup/security_host string mirrors.bfsu.edu.cn
 
 # 启用 APT 源代码软件源？
 apt-setup-udeb  apt-setup/enable-source-repositories    boolean false
@@ -244,6 +249,9 @@ d-i grub-installer/with_other_os boolean true
 #d-i grub-installer/bootdev  string /dev/sda
 # To install to the first device (assuming it is not a USB stick):
 d-i grub-installer/bootdev  string
+# 安装启动引导器的设备：
+# Choices:
+grub-installer  grub-installer/choose_bootdev   select  /dev/sda
 
 # 是否强制将 GRUB 安装到 EFI 可移动媒体路径？
 grub-installer  grub-installer/force-efi-extra-removable        boolean true
@@ -333,16 +341,7 @@ d-i preseed/early_command string anna-install eatmydata-udeb
 # directly, or use the apt-install and in-target commands to easily install
 # packages and run commands in the target system.
 #d-i preseed/late_command string apt-install zsh; in-target chsh -s /bin/zsh
-d-i preseed/late_command string in-target mkdir -pv /boot/efi/EFI/debian ; \
-in-target cp -vf /boot/efi/EFI/atzlinux/grub.cfg /boot/efi/EFI/debian/
-
-d-i apt-setup/local0/repository string \
-        deb https://mirrors.bfsu.edu.cn/debian-security bullseye-security  main non-free contrib
-d-i apt-setup/local0/comment string security apt source
-
-#d-i apt-setup/local1/repository string \
-#	https://apt.atzlinux.com/atzlinux bullseye  main contrib non-free
-#d-i apt-setup/local1/comment string atzlinux.com desktop project apt source
+d-i preseed/late_command string in-target cp -v /dev/null /etc/apt/sources.list
 
 # Downloading a file failed:
 # Choices: Retry, Change mirror, Ignore
@@ -350,7 +349,7 @@ apt-mirror-setup        apt-setup/mirror/error  select  Ignore
 
 d-i apt-setup/cdrom/set-first boolean	false
 
-#apt-cdrom-setup apt-setup/disable-cdrom-entries boolean true
+apt-cdrom-setup apt-setup/disable-cdrom-entries boolean true
 
 ### skip some annoying installation status notes
 # Avoid that last message about the install being complete.
