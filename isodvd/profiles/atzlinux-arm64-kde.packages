@@ -192,7 +192,6 @@ xdg-user-dirs
 blueman
 fonts-wqy-zenhei
 xfonts-wqy
-xscreensaver
 kigo
 gnugo
 fonts-noto-cjk
@@ -336,4 +335,15 @@ sogoupinyin
 xboard-xiangqi
 fcitx-inputmethod-atzlinux
 lx-music-desktop
+imagemagick
+htop
+xfce-atzlinux-v11
+desktop-base-atzlinux
+apvlv
+ca-certificates-atzlinux
+sbsigntool
+mesa-va-drivers
+acl
+radeontop
+webp-pixbuf-loader
 dists-bullseye-files-atzlinux

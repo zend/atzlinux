@@ -199,7 +199,6 @@ dosfstools
 tmux
 libssl-dev
 libelf-dev
-atzlinux-update-patch-txt-tech
 dists-bullseye-files-atzlinux
 memtester
 cu
@@ -211,4 +210,10 @@ exfatprogs
 libblockdev-crypto2
 cpufrequtils
 manpages
+imagemagick
+linux-perf-5.10
+ca-certificates-atzlinux
+sbsigntool
+acl
 dists-bullseye-files-contents-atzlinux
+atzlinux-update-patch-txt-tech
