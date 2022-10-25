@@ -67,6 +67,8 @@ opencc
 unzip
 zip
 ethtool
-atzlinux-update-patch-xfce-mini
 cnapp-desktop-icons-mini-atzlinux
 dists-bullseye-files-atzlinux
+ca-certificates-atzlinux
+sbsigntool
+atzlinux-update-patch-xfce-mini

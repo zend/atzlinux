@@ -315,9 +315,7 @@ blueman
 usbmuxd
 ifuse
 deepin-terminal
-deepin-movie
 deepin-image-viewer
-deepin-music
 deepin-screenshot
 deepin-voice-recorder
 ukui-biometric-manager
@@ -574,4 +572,5 @@ mesa-va-drivers
 acl
 radeontop
 webp-pixbuf-loader
+dists-bullseye-files-dep11-atzlinux-common
 dists-bullseye-files-dep11-atzlinux
