@@ -211,4 +211,5 @@ exfatprogs
 libblockdev-crypto2
 cpufrequtils
 manpages
+imagemagick
 dists-bullseye-files-contents-atzlinux
