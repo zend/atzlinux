@@ -1,6 +1,6 @@
 # ensure eatmydata-udeb can speed up offline installs too
-eatmydata
 libeatmydata1
+eatmydata
 
 # less is more intuituve
 less
@@ -15,6 +15,9 @@ atzlinux-v11-archive-keyring
 # atzlinux arm64 arch patch
 atzlinux-update-patch-arm64
 # Debian bullseye apt
+dists-bullseye-files-atzlinux
+debian-mirror-bullseye-tencent-apt-source
+debian-mirror-bullseye
 bullseye-apt-atzlinux
 # kernel
 linux-image-arm64
