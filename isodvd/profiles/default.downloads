@@ -67,6 +67,7 @@ grub-efi-arm64
 grub-efi-arm64-signed
 mokutil
 shim-unsigned
+shim-helpers-arm64-signed
 shim-signed-common
 shim-signed
 
