@@ -438,4 +438,5 @@ ffmpeg
 firmware-nouveau-atzlinux
 mousewheel
 fonts-open-sans
+libpipewire-0.3-0
 atzlinux-update-patch-xfce
