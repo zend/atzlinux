@@ -608,4 +608,9 @@ light
 mpv
 p7zip-rar
 ffmpeg
+firmware-nouveau-atzlinux
+mousewheel
+fonts-open-sans
+libpipewire-0.3-0
+hardinfo
 atzlinux-update-patch-xall

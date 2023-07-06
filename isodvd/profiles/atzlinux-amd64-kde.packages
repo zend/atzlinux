@@ -387,4 +387,9 @@ ffmpeg
 dolphin-plugins
 kio-extras
 kamera
+firmware-nouveau-atzlinux
+mousewheel
+fonts-open-sans
+libpipewire-0.3-0
+hardinfo
 atzlinux-update-patch-kde
