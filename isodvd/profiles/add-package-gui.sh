@@ -1,6 +1,6 @@
 # add packages to all X suite
 
-for f in atzlinux-amd64-xall.packages atzlinux-amd64-xfce.packages atzlinux-amd64-kde.packages
+for f in atzlinux-amd64-xall.packages atzlinux-amd64-xfce.packages atzlinux-amd64-kde.packages atzlinux-amd64-gnome.packages
 	do
 		echo $f;
 		wc -l $f
