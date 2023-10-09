@@ -154,8 +154,6 @@ libexo-common
 libgarcon-1-0
 libgarcon-gtk3-1-0
 libnss3
-lightdm
-lightdm-gtk-greeter
 lxappearance
 menulibre
 mousepad
@@ -171,7 +169,6 @@ python3-sip
 ristretto
 ruby-test-unit-notify
 shared-mime-info
-shiki-colors-xfwm-theme
 software-properties-common
 sudo
 task-chinese-s
@@ -189,10 +186,6 @@ xdg-utils
 xdmx
 xdmx-tools
 xfconf
-xfdesktop4
-xfdesktop4-data
-xfwm4
-xfwm4-theme-breeze
 xnest
 xorg-server-source
 xserver-common
@@ -252,7 +245,6 @@ wps-office-fonts
 task-gnome-desktop
 cheese
 libindicator3-7
-liblightdm-gobject-1-0
 fonts-droid-fallback
 fonts-wqy-zenhei
 xfonts-wqy
