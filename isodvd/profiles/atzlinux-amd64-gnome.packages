@@ -187,7 +187,6 @@ x11-xserver-utils
 xdg-utils
 xdmx
 xdmx-tools
-xfconf
 xnest
 xorg-server-source
 xserver-common
@@ -495,7 +494,6 @@ libkworkspace5-5
 liblunar-calendar-gtk3-module
 libqt5quickwidgets5
 libsodium23
-libxfconf-0-3
 lunar-date
 nautilus-extension-gnome-terminal
 nvme-cli
