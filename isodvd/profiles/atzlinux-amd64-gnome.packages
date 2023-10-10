@@ -120,7 +120,6 @@ at-spi2-core
 ayatana-indicator-session
 blackbird-gtk-theme
 bluebird-gtk-theme
-budgie-sntray-plugin
 cairo-dock-gmenu-plug-in
 dnsutils
 exo-utils
@@ -178,7 +177,6 @@ task-chinese-s-desktop
 task-desktop
 tcpdump
 traceroute
-vala-sntray-plugin
 wget
 whois
 x11-xserver-utils
@@ -494,7 +492,6 @@ nautilus-extension-gnome-terminal
 nvme-cli
 opengnb
 shadowsocks-libev
-xfburn
 zenity
 dists-bullseye-files-atzlinux
 dists-bullseye-files-dep11-atzlinux-common
