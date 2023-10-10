@@ -177,8 +177,6 @@ task-chinese-s
 task-chinese-s-desktop
 task-desktop
 tcpdump
-thunar
-thunar-data
 traceroute
 vala-sntray-plugin
 wget
@@ -280,7 +278,6 @@ plymouth-label
 powermgmt-base
 tango-icon-theme
 telnet
-thunar-volman
 tumbler
 tumbler-common
 xdg-user-dirs
@@ -439,15 +436,12 @@ lshw
 lm-sensors
 xinput
 ddcutil
-thunar-archive-plugin
-thunar-media-tags-plugin
 font-manager
 screenfetch
 neofetch
 exfatprogs
 ipp-usb
 isenkram-cli
-thunar-font-manager
 iptux
 linuxinfo
 ksnip
