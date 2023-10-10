@@ -122,7 +122,6 @@ blackbird-gtk-theme
 bluebird-gtk-theme
 cairo-dock-gmenu-plug-in
 dnsutils
-exo-utils
 fcitx-config-common
 fcitx-config-gtk
 fcitx-dbus-status
@@ -148,8 +147,6 @@ iftop
 iotop
 libbsd0
 libcanberra-gtk-module
-libexo-2-0
-libexo-common
 libgarcon-1-0
 libgarcon-gtk3-1-0
 libnss3
