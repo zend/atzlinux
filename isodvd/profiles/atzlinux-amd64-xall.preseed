@@ -244,6 +244,9 @@ d-i grub-installer/bootdev  string
 # Choices:
 grub-installer  grub-installer/choose_bootdev   select  /dev/sda
 
+# Run os-prober automatically to detect and boot other OSes?
+grub-pc grub2/enable_os_prober  boolean true
+
 # 是否强制将 GRUB 安装到 EFI 可移动媒体路径？
 grub-installer  grub-installer/force-efi-extra-removable        boolean true
 # Force extra installation to the EFI removable media path?
