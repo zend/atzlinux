@@ -616,4 +616,6 @@ qmmp
 okular
 file-roller
 dconf-editor
+libgsettings-qt1
+libqt5svg5
 atzlinux-update-patch-xall

@@ -393,4 +393,6 @@ libpipewire-0.3-0
 hardinfo
 qmmp
 okular
+libgsettings-qt1
+libqt5svg5
 atzlinux-update-patch-kde

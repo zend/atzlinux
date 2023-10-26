@@ -45,6 +45,8 @@ fcitx-config-gtk
 fcitx-frontend-gtk3
 fcitx-frontend-qt5
 fcitx-frontend-all
+libgsettings-qt1
+libqt5svg5
 sogoupinyin
 policykit-1-gnome
 opencc
