@@ -21,6 +21,7 @@ https://keys.openpgp.org/about/usage
 ### 命令行上传公钥示例：
 ```shell script
 gpg --export xsw@atzlinux.com | curl -T - https://keys.openpgp.org
+gpg --export FF549B4164FBCAA19D3ACC78942C9D1AD9A5707E | curl -T - https://keys.openpgp.org
 ```
 
 该命令上传完成后，会在终端返回一个链接，拷贝该链接，在浏览器地址栏粘贴进入返回的链接页面，选择发送邮件进行确认。
