@@ -1,7 +1,7 @@
-apt-transport-https
-software-properties-common
+#apt-transport-https
+#software-properties-common
 opencc
-dists-bullseye-files-atzlinux
+#dists-bullseye-files-atzlinux
 debconf-utils
 zhcon
 bash-completion
