@@ -11,14 +11,13 @@ console-setup-linux
 console-setup
 keyboard-configuration
 # atzlinux project apt key
-atzlinux-v11-archive-keyring
+atzlinux-v12-archive-keyring
 # atzlinux project patch
 atzlinux-update-patch
-# Debian bullseye apt
-dists-bullseye-files-atzlinux
-debian-mirror-bullseye-tencent-apt-source
-debian-mirror-bullseye
-bullseye-apt-atzlinux
+# Debian bookworm apt
+dists-bookworm-files-atzlinux
+debian-mirror-bookworm-tencent-apt-source
+debian-mirror-bookworm
 # kernel
 linux-image-rt-amd64
 linux-headers-rt-amd64
