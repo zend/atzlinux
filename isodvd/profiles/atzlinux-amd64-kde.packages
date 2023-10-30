@@ -65,8 +65,6 @@ wget
 whois
 x11-xserver-utils
 xdg-utils
-xdmx
-xdmx-tools
 xfconf
 xnest
 xorg-server-source
