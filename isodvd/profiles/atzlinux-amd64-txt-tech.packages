@@ -104,7 +104,7 @@ rdfind
 php-cli
 flex
 bison
-python-all
+python3-all
 dos2unix
 tree
 httpie
