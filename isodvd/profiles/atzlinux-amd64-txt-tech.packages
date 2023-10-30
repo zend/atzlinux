@@ -32,7 +32,6 @@ subversion
 bind9-host
 bzip2
 csh
-netcat
 default-mysql-client
 rsync
 screen
@@ -228,4 +227,5 @@ light
 p7zip-rar
 ffmpeg
 i2c-tools
+netcat-openbsd
 atzlinux-update-patch-txt-tech

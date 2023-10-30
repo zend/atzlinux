@@ -286,7 +286,6 @@ krb5-locales
 libgdk-pixbuf2.0-bin
 libsasl2-modules
 ncurses-term
-netcat-traditional
 publicsuffix
 python3-debian
 python3-debianbts
@@ -527,4 +526,5 @@ file-roller
 dconf-editor
 libgsettings-qt1
 libqt5svg5
+netcat-openbsd
 atzlinux-update-patch-gnome
