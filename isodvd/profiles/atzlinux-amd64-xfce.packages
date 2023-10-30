@@ -406,7 +406,7 @@ dists-bullseye-files-atzlinux
 libblockdev-crypto2
 cpufrequtils
 imagemagick
-linux-perf-5.10
+linux-perf
 htop
 xfce-atzlinux-v11
 desktop-base-atzlinux

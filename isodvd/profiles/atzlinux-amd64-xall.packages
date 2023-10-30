@@ -577,7 +577,7 @@ dists-bullseye-files-dep11-atzlinux
 cnapp-desktop-icons-atzlinux
 cpufrequtils
 imagemagick
-linux-perf-5.10
+linux-perf
 htop
 xfce-atzlinux-v11
 desktop-base-atzlinux

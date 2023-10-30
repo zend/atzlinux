@@ -490,7 +490,7 @@ dists-bullseye-files-dep11-atzlinux-common
 dists-bullseye-files-dep11-atzlinux
 cpufrequtils
 imagemagick
-linux-perf-5.10
+linux-perf
 htop
 desktop-base-atzlinux
 apvlv
