@@ -1,4 +1,4 @@
-#### Contents of the preconfiguration file (for bullseye)
+#### Contents of the preconfiguration file (for bookworm)
 ### Localization
 # Preseeding only locale sets language, country and locale.
 d-i debian-installer/locale string zh_CN
