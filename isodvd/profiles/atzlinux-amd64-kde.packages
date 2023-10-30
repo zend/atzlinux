@@ -196,7 +196,6 @@ ideviceinstaller
 libimobiledevice-utils
 libusbmuxd-tools
 usbmuxd
-gvfs-bin
 gvfs-fuse
 ifuse
 ipheth-utils
