@@ -70,7 +70,6 @@ network-manager-gnome
 zenity
 
 cnapp-desktop-icons-mini-atzlinux
-dists-bullseye-files-atzlinux
 cpufrequtils
 ca-certificates-atzlinux
 sbsigntool
