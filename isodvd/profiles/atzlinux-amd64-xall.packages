@@ -607,6 +607,7 @@ firmware-nouveau-atzlinux
 mousewheel
 fonts-open-sans
 libpipewire-0.3-0
+desktop-icon-trust
 libtiff5
 hardinfo
 qmmp
