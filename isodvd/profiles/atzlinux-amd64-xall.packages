@@ -568,8 +568,8 @@ opengnb
 shadowsocks-libev
 xfburn
 zenity
-dists-bullseye-files-dep11-atzlinux-common
-dists-bullseye-files-dep11-atzlinux
+dists-bookworm-files-dep11-atzlinux-common
+dists-bookworm-files-dep11-atzlinux
 cnapp-desktop-icons-atzlinux
 cpufrequtils
 imagemagick

@@ -482,8 +482,8 @@ nvme-cli
 opengnb
 shadowsocks-libev
 zenity
-dists-bullseye-files-dep11-atzlinux-common
-dists-bullseye-files-dep11-atzlinux
+dists-bookworm-files-dep11-atzlinux-common
+dists-bookworm-files-dep11-atzlinux
 cpufrequtils
 imagemagick
 linux-perf
