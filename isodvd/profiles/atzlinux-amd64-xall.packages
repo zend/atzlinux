@@ -488,7 +488,7 @@ netscripts-atzlinux
 firmware-atheros
 hw-probe
 gnome-shell-extension-appindicator
-gnome-tweak
+gnome-tweaks
 lshw
 lm-sensors
 xinput
