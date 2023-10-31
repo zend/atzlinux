@@ -14,6 +14,9 @@ d-i localechooser/supported-locales multiselect zh_CN.GB18030 zh_CN.GBK zh_CN.GB
 d-i keyboard-configuration/xkb-keymap select us
 # d-i keyboard-configuration/toggle select No toggling
 
+# Install NVIDIA driver despite unsupported graphics card?
+d-i     nvidia-driver/install-even-if-unsupported-gpu-exists    boolean false
+
 # for internal use; can be preseeded
 partman-base    partman/default_filesystem      string  ext4
 # 返回菜单并更正错误吗？
