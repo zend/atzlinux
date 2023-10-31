@@ -409,7 +409,6 @@ python3-cffi-backend
 gdebi
 pulseaudio
 firejail
-wiznote
 vim-gtk3
 transmission-gtk
 fonts-arphic-gbsn00lp
@@ -511,7 +510,7 @@ app.web.163.music
 app.web.baidu.map
 app.web.kugou
 app.web.youdao.dict
-atzlinux-store-a11
+#atzlinux-store-v12
 com.alibabainc.dingtalk
 baidunetdisk
 lx-music-desktop
