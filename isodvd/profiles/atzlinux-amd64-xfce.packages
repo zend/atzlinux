@@ -396,7 +396,8 @@ cpufrequtils
 imagemagick
 linux-perf
 htop
-xfce-atzlinux-v11
+xfce-atzlinux-v12
+xfce-atzlinux
 desktop-base-atzlinux
 apvlv
 ca-certificates-atzlinux
