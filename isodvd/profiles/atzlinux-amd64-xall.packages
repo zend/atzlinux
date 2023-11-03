@@ -510,7 +510,6 @@ app.web.163.music
 app.web.baidu.map
 app.web.kugou
 app.web.youdao.dict
-#atzlinux-store-v12
 com.alibabainc.dingtalk
 baidunetdisk
 dbus-x11
@@ -606,4 +605,6 @@ libgsettings-qt1
 libqt5svg5
 netcat-openbsd
 listen1
+atzlinux-store-v12
+atzlinux-store
 atzlinux-update-patch-xall
