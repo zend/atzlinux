@@ -55,6 +55,10 @@ task-chinese-s
 manpages-zh
 xterm
 
+# add by atzlinux, need by wireless install
+libnl-route-3-200
+wpasupplicant
+
 # add by atzlinux, need by last grub install step
 os-prober
 efibootmgr
