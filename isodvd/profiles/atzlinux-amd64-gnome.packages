@@ -329,7 +329,6 @@ ntpdate
 tlp
 python3-cffi-backend
 gdebi
-pulseaudio
 firejail
 vim-gtk3
 transmission-gtk
@@ -360,7 +359,6 @@ simplescreenrecorder
 zstd
 freerdp2-x11
 linux-headers-rt-amd64
-pulseaudio-module-bluetooth
 gthumb
 krdc
 ibus
