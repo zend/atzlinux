@@ -117,3 +117,6 @@ intel-microcode
 
 # only put in iso
 openssh-server
+
+# need by kde sub-verison
+default-mysql-client-core
