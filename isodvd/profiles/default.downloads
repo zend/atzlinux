@@ -117,6 +117,8 @@ intel-microcode
 
 # only put in iso
 openssh-server
+# bpo kernel
+linux-image-6.5.0-0.deb12.1-rt-amd64
 
 # need by kde sub-verison
 default-mysql-client-core
