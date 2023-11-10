@@ -509,6 +509,7 @@ dconf-editor
 libgsettings-qt1
 libqt5svg5
 netcat-openbsd
+gnome-shell-extension-manager
 listen1
 atzlinux-store-v12
 atzlinux-store
