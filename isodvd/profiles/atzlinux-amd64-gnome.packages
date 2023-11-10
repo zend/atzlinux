@@ -148,8 +148,6 @@ iotop
 libbsd0
 libcanberra-gtk-module
 libnss3
-lightdm
-lightdm-gtk-greeter
 lxappearance
 menulibre
 net-tools
