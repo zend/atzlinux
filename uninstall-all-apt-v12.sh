@@ -3,7 +3,6 @@ echo "开始卸载 atzlinux 常用中文软件 ..."
 
 apt -y purge  \
 baidunetdisk \
-netease-cloud-music \
 sogoupinyin \
 electronic-wechat \
 wps-office wps-office-fonts
@@ -14,8 +13,8 @@ apt -y purge linuxqq
 
 apt -y purge fonts-zh-cn-misc-atzlinux
 
-apt -y purge atzlinux-store-v11
-apt -y purge atzlinux-v11-archive-keyring
+apt -y purge atzlinux-store-v12
+apt -y purge atzlinux-v12-archive-keyring
 
 echo "开始卸载不需要使用的中文软件依赖包 ..."
 apt -y autoremove
