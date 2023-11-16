@@ -221,11 +221,12 @@ acl
 ncal
 subnetcalc
 ntfs-3g
-tools-atzlinux-dev
 dpkg-repack
 light
 p7zip-rar
 ffmpeg
 i2c-tools
 netcat-openbsd
+tools-atzlinux-dev
+tools-atzlinux-dev-conf
 atzlinux-update-patch-txt-tech
