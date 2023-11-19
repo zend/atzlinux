@@ -605,4 +605,5 @@ listen1
 atzlinux-store-v12
 atzlinux-store
 backgrounds-atzlinux
+lightdm-gtk-greeter-settings
 atzlinux-update-patch-xall
