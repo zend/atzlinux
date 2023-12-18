@@ -1,1 +1,1 @@
-deb https://download.vscodium.com/debs vscodium main
+deb [arch=amd64] https://download.vscodium.com/debs vscodium main
