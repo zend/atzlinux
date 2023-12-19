@@ -409,7 +409,6 @@ lshw
 lm-sensors
 xinput
 ddcutil
-font-manager
 screenfetch
 neofetch
 exfatprogs

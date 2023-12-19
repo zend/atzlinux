@@ -492,13 +492,11 @@ ddcutil
 thunar-archive-plugin
 thunar-media-tags-plugin
 xfce4-sensors-plugin
-font-manager
 screenfetch
 neofetch
 exfatprogs
 ipp-usb
 isenkram-cli
-thunar-font-manager
 iptux
 linuxinfo
 ksnip
