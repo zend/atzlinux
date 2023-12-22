@@ -387,4 +387,5 @@ atzlinux-store-v12
 atzlinux-store
 backgrounds-atzlinux
 lightdm-gtk-greeter-settings
+libvips42
 atzlinux-update-patch-kde
