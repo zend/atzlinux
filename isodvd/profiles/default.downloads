@@ -80,8 +80,6 @@ firmware-b43-atzlinux
 firmware-nouveau-atzlinux
 
 # add by atzlinux, add all debian-cd firmware_task pkg
-firmware-b43-installer
-firmware-b43legacy-installer
 firmware-linux-free
 hdmi2usb-fx2-firmware
 firmware-ath9k-htc
