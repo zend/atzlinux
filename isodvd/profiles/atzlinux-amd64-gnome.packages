@@ -358,7 +358,6 @@ zstd
 freerdp2-x11
 linux-headers-rt-amd64
 gthumb
-krdc
 ibus
 ibus-sunpinyin
 ibus-libpinyin
