@@ -2,3 +2,5 @@ mailcap
 media-types
 pci.ids
 usb.ids
+debian-reference-common
+debian-reference-zh-cn
