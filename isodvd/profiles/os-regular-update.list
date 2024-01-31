@@ -1,6 +1,8 @@
+debian-archive-keyring
+debian-ports-archive-keyring
+debian-reference-common
+debian-reference-zh-cn
 mailcap
 media-types
 pci.ids
 usb.ids
-debian-reference-common
-debian-reference-zh-cn
