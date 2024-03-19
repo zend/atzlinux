@@ -603,4 +603,5 @@ backgrounds-atzlinux
 lightdm-gtk-greeter-settings
 libvips42
 netease-cloud-music-gtk
+libpam-fprintd
 atzlinux-update-patch-xall

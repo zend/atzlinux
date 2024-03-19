@@ -512,4 +512,5 @@ atzlinux-store
 backgrounds-atzlinux
 libvips42
 netease-cloud-music-gtk
+libpam-fprintd
 atzlinux-update-patch-gnome
