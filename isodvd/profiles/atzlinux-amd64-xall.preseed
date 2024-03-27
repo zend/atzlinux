@@ -335,9 +335,9 @@ d-i preseed/late_command string in-target cp -v /dev/null /etc/apt/sources.list;
 echo "atzlinux-`cut -c 31- /target/etc/machine-id`" > /target/etc/hostname; \
 echo "127.0.0.1 `cat /target/etc/hostname`" >> /target/etc/hosts; \
 chroot /target bash -c "sed -i /"atzlinux$"/d /etc/hosts"; \
+in-target mkdir -pv /boot/efi/EFI/debian || true ; \
+in-target cp -vf /boot/efi/EFI/atzlinux/grub.cfg /boot/efi/EFI/debian/ || true ; \
 exit 0
-d-i preseed/late_command string in-target mkdir -pv /boot/efi/EFI/debian || true ; \
-in-target cp -vf /boot/efi/EFI/atzlinux/grub.cfg /boot/efi/EFI/debian/ || true
 
 # Downloading a file failed:
 # Choices: Retry, Change mirror, Ignore
