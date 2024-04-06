@@ -16,11 +16,11 @@ Since：成为项目成员的时间, yyyy-mm-dd
 添加时，请注意保留以下几行为空，方便后续新成员直接复制添加。
 ```text
 ## 英文ID(中文名)
-- Name: 
-- Uid: 
-- Email: 
-- GPGid: 
-- Since: 
+- Name:
+- Uid:
+- Email:
+- GPGid:
+- Since:
 ```
 ## xiao sheng wen(肖盛文)
 - Name: xiao sheng wen(肖盛文)
@@ -40,9 +40,9 @@ Since：成为项目成员的时间, yyyy-mm-dd
 - Name: Careone (字甲达宾)
 - Uid: careone
 - Email: emacslocale@126.com,careone@atzlinux.com
-- GPGid: 
+- GPGid:
 - Since: 2019-10-07
-- Profile: 
+- Profile:
 
   #### 特长
 
@@ -56,7 +56,7 @@ Since：成为项目成员的时间, yyyy-mm-dd
 
   - WinBoard-XQ 4.8.0 (WinBoard 中国象棋专版-中文版）的维护者。
 
-    项目主页 (SourceForge): 
+    项目主页 (SourceForge):
 
     https://sourceforge.net/projects/emacslocale/files/xiangqi/winboard-XQ/
 
