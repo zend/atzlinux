@@ -210,8 +210,6 @@ python3-mutagen
 reprotest
 squashfuse
 strace
-dists-bookworm-files-dep11-atzlinux
-dists-bookworm-files-contents-atzlinux
 libblockdev-crypto2
 cpufrequtils
 imagemagick
@@ -229,5 +227,7 @@ i2c-tools
 netcat-openbsd
 tools-atzlinux-dev
 tools-atzlinux-dev-conf
-dists-bookworm-files-atzlinux
 atzlinux-update-patch-txt-tech
+dists-bookworm-files-atzlinux
+dists-bookworm-files-dep11-atzlinux
+dists-bookworm-files-contents-atzlinux

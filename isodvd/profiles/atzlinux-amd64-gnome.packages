@@ -459,8 +459,6 @@ nautilus-extension-gnome-terminal
 nvme-cli
 opengnb
 zenity
-dists-bookworm-files-dep11-atzlinux-common
-dists-bookworm-files-dep11-atzlinux
 cpufrequtils
 imagemagick
 linux-perf
@@ -512,5 +510,7 @@ backgrounds-atzlinux
 libvips42
 netease-cloud-music-gtk
 libpam-fprintd
-dists-bookworm-files-atzlinux
 atzlinux-update-patch-gnome
+dists-bookworm-files-atzlinux
+dists-bookworm-files-dep11-atzlinux
+dists-bookworm-files-dep11-atzlinux-common

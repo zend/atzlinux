@@ -385,7 +385,6 @@ opengnb
 xfburn
 zenity
 cnapp-desktop-icons-atzlinux
-dists-bookworm-files-dep11-atzlinux
 libblockdev-crypto2
 cpufrequtils
 imagemagick
@@ -437,5 +436,6 @@ backgrounds-atzlinux
 lightdm-gtk-greeter-settings
 libvips42
 netease-cloud-music-gtk
-dists-bookworm-files-atzlinux
 atzlinux-update-patch-xfce
+dists-bookworm-files-atzlinux
+dists-bookworm-files-dep11-atzlinux

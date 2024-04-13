@@ -331,8 +331,6 @@ python3-imobiledevice
 python3-plist
 qml-module-org-kde-newstuff
 zenity
-dists-bookworm-files-dep11-atzlinux-common
-dists-bookworm-files-dep11-atzlinux
 cnapp-desktop-icons-kde-atzlinux
 libblockdev-crypto2
 cpufrequtils
@@ -387,5 +385,7 @@ backgrounds-atzlinux
 lightdm-gtk-greeter-settings
 libvips42
 netease-cloud-music-gtk
-dists-bookworm-files-atzlinux
 atzlinux-update-patch-kde
+dists-bookworm-files-atzlinux
+dists-bookworm-files-dep11-atzlinux
+dists-bookworm-files-dep11-atzlinux-common
