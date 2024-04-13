@@ -512,4 +512,5 @@ backgrounds-atzlinux
 libvips42
 netease-cloud-music-gtk
 libpam-fprintd
+dists-bookworm-files-atzlinux
 atzlinux-update-patch-gnome

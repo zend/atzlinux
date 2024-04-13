@@ -387,4 +387,5 @@ backgrounds-atzlinux
 lightdm-gtk-greeter-settings
 libvips42
 netease-cloud-music-gtk
+dists-bookworm-files-atzlinux
 atzlinux-update-patch-kde
