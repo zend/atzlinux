@@ -15,7 +15,6 @@ atzlinux-v12-archive-keyring
 # atzlinux project patch
 atzlinux-update-patch
 # Debian bookworm apt
-dists-bookworm-files-atzlinux
 debian-mirror-bookworm-tencent-apt-source
 debian-mirror-bookworm
 # kernel
