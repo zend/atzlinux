@@ -1,1 +1,1 @@
-deb https://debrepo.freedownloadmanager.org/ jammy main
+deb [arch=amd64] https://debrepo.freedownloadmanager.org/ jammy main
