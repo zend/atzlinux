@@ -436,6 +436,8 @@ backgrounds-atzlinux
 lightdm-gtk-greeter-settings
 libvips42
 netease-cloud-music-gtk
+tools-atzlinux
 atzlinux-update-patch-xfce
+
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

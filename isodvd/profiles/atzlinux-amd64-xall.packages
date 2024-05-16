@@ -601,6 +601,7 @@ lightdm-gtk-greeter-settings
 libvips42
 netease-cloud-music-gtk
 libpam-fprintd
+tools-atzlinux
 atzlinux-update-patch-xall
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
