@@ -10,10 +10,6 @@ kbd
 console-setup-linux
 console-setup
 keyboard-configuration
-# atzlinux project apt key
-atzlinux-v12-archive-keyring
-# atzlinux project patch
-atzlinux-update-patch
 # Debian bookworm apt
 debian-mirror-bookworm-tencent-apt-source
 debian-mirror-bookworm
@@ -27,3 +23,8 @@ dkms
 locales
 
 systemd-timesyncd
+
+# atzlinux project apt key
+atzlinux-v12-archive-keyring
+# atzlinux project patch
+atzlinux-update-patch
