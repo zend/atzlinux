@@ -510,6 +510,7 @@ libvips42
 netease-cloud-music-gtk
 libpam-fprintd
 tools-atzlinux
+libssl1.1
 atzlinux-update-patch-gnome
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
