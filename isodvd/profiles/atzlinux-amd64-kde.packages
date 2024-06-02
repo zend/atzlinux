@@ -388,6 +388,7 @@ tools-atzlinux
 libssl1.1
 plasma-systemmonitor
 psensor
+plasma-calendar-addons
 atzlinux-update-patch-kde
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
