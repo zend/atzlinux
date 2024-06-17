@@ -603,7 +603,6 @@ libpam-fprintd
 tools-atzlinux
 libssl1.1
 psensor
-laptop-mode-tools
 atzlinux-update-patch-xall
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

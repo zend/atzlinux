@@ -512,7 +512,6 @@ libpam-fprintd
 tools-atzlinux
 libssl1.1
 psensor
-laptop-mode-tools
 atzlinux-update-patch-gnome
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
