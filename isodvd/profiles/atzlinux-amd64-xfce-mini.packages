@@ -1,6 +1,8 @@
 apt-transport-https
 firmware-amd-graphics
 firmware-iwlwifi
+wireless-regdb
+wpasupplicant
 firmware-linux-free
 firmware-misc-nonfree
 firmware-realtek
