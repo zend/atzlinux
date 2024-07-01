@@ -3,3 +3,5 @@ debconf-utils
 opencc
 tools-atzlinux-dev
 zhcon
+sbsigntool
+intel-microcode
