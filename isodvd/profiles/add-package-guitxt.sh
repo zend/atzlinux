@@ -6,7 +6,7 @@ for f in atzlinux-amd64-txt-tech.packages atzlinux-amd64-xfce.packages atzlinux-
 		wc -l $f
 		N=`wc -l $f|awk {'print $1'}`
 		echo $N
-		IN=`expr $N - 1`
+		IN=`expr $N - 4`
 
 		sed -i "$IN r to-add" $f
 	done
