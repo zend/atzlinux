@@ -5,3 +5,4 @@ tools-atzlinux-dev
 zhcon
 sbsigntool
 intel-microcode
+dists-bookworm-files-atzlinux
