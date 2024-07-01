@@ -4,6 +4,7 @@ firmware-iwlwifi
 firmware-linux-free
 firmware-misc-nonfree
 firmware-realtek
+intel-microcode
 xserver-xorg-video-intel
 iw
 wireless-tools
