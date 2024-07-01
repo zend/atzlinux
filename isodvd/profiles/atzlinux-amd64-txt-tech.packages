@@ -227,6 +227,7 @@ i2c-tools
 netcat-openbsd
 tools-atzlinux-dev
 tools-atzlinux-dev-conf
+wpasupplicant
 atzlinux-update-patch-txt-tech
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
