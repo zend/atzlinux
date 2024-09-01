@@ -390,6 +390,7 @@ psensor
 plasma-calendar-addons
 wpasupplicant
 sysbench
+xdotool
 atzlinux-update-patch-kde
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

@@ -439,6 +439,7 @@ libssl1.1
 psensor
 wpasupplicant
 sysbench
+xdotool
 atzlinux-update-patch-xfce
 
 dists-bookworm-files-atzlinux
