@@ -1,7 +1,7 @@
-# https://pinyin.sogou.com/linux/
-# https://pinyin.sogou.com/linux/changelog.php
+# https://shurufa.sogou.com/linux
+# https://pinyin.sogou.com/linux/ # outdated
+# https://pinyin.sogou.com/linux/changelog.php # outdated
+# https://shurufa.sogou.com/linux/updateLog
 
-# version 2.2.0.0108
-http://cdn2.ime.sogou.com/dl/index/1524572264/sogoupinyin_2.2.0.0108_amd64.deb?st=BN0Em1lJ_UaP3N9q5i3L9A&e=1570243807&fn=sogoupinyin_2.2.0.0108_amd64.deb
-# version 2.3.1.0112
-http://cdn2.ime.sogou.com/dl/index/1571302197/sogoupinyin_2.3.1.0112_amd64.deb?st=x_sbxD4RrG1tvywaRYDD_Q&e=1571370757&fn=sogoupinyin_2.3.1.0112_amd64.deb
+# 4.2.1.145
+https://ime-sec.gtimg.com/202409011430/e42996437cfa55e384b5a5c1895f1f5a/pc/dl/gzindex/1680521603/sogoupinyin_4.2.1.145_amd64.deb
