@@ -2936,7 +2936,7 @@ cryptsetup_2.6.1-4~deb12u2_amd64.deb
 libcryptsetup12_2.6.1-4~deb12u2_amd64.deb
 cryptsetup-bin_2.6.1-4~deb12u2_amd64.deb
 cryptsetup-udeb_2.6.1-4~deb12u2_amd64.udeb
-curl_8.9.1-2~bpo12+1_amd64.deb
+curl_7.88.1-10+deb12u7_amd64.deb
 libcurl3-gnutls_7.88.1-10+deb12u7_amd64.deb
 libcurl4_7.88.1-10+deb12u7_amd64.deb
 libcrack2_2.9.6-5+b1_amd64.deb
