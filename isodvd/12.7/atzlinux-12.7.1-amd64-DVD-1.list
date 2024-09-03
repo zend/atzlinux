@@ -2914,9 +2914,9 @@ ca-certificates-atzlinux_1.0.0_all.deb
 libc-ares2_1.18.1-3_amd64.deb
 cron_3.0pl1-162_amd64.deb
 cron-daemon-common_3.0pl1-162_all.deb
-cnapp-desktop-icons-mini-atzlinux_2024.atz12.05.16_all.deb
-cnapp-desktop-icons-kde-atzlinux_2024.atz12.05.16_amd64.deb
-cnapp-desktop-icons-atzlinux_2024.atz12.05.16_amd64.deb
+cnapp-desktop-icons-mini-atzlinux_2024.atz12.09.03_all.deb
+cnapp-desktop-icons-kde-atzlinux_2024.atz12.09.03_amd64.deb
+cnapp-desktop-icons-atzlinux_2024.atz12.09.03_amd64.deb
 cpuinfo_0.0~git20220617.082deff-1_amd64.deb
 libcpuinfo0_0.0~git20220617.082deff-1_amd64.deb
 cvs_1.12.13+real-28+deb12u1_amd64.deb
@@ -3255,7 +3255,7 @@ sogoupinyin_4.2.1.145_amd64.deb
 fonts-zh-cn-misc-atzlinux_1.1.4_all.deb
 com.alibabainc.dingtalk_7.6.10.4082601_amd64.deb
 wps-office-fonts_1.0_all.deb
-wps-office_11.1.0.11723_amd64.deb
+wps-office_12.1.0.17881_amd64.deb
 amd64-microcode_3.20240820.1~deb12u1_amd64.deb
 atmel-firmware_1.3-7_all.deb
 firmware-zd1211_1.5-10_all.deb
