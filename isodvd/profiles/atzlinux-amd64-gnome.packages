@@ -514,6 +514,7 @@ psensor
 wpasupplicant
 sysbench
 xdotool
+bsdextrautils
 atzlinux-update-patch-gnome
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

@@ -440,6 +440,7 @@ psensor
 wpasupplicant
 sysbench
 xdotool
+bsdextrautils
 atzlinux-update-patch-xfce
 
 dists-bookworm-files-atzlinux

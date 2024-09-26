@@ -605,6 +605,7 @@ psensor
 wpasupplicant
 sysbench
 xdotool
+bsdextrautils
 atzlinux-update-patch-xall
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
