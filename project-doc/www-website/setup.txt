@@ -17,7 +17,10 @@ autoindex_localtime on;
 charset 'utf-8';
 
 4.安装 webalizer
+webalizer 软件包在 Debian 11 不存在，在 Debian 11 上安装时，
 需先添加 Debian 10 buster 软件源。
+
+该软件包已经在 Debian 12 里面恢复，可以直接安装。
 
 修改 配置文件：
 /etc/webalizer/webalizer.conf
