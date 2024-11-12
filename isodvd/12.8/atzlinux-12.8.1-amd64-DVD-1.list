@@ -371,9 +371,9 @@ gnome-settings-daemon_43.0-4_amd64.deb
 greybird-gtk-theme_3.23.2-1_all.deb
 gnome-sushi_43.0-2_amd64.deb
 gnustep-common_2.9.1-2_amd64.deb
-libgs-common_10.0.0~dfsg-11+deb12u5_all.deb
-libgs10_10.0.0~dfsg-11+deb12u5_amd64.deb
-libgs10-common_10.0.0~dfsg-11+deb12u5_all.deb
+libgs10-common_10.0.0~dfsg-11+deb12u6_all.deb
+libgs-common_10.0.0~dfsg-11+deb12u6_all.deb
+libgs10_10.0.0~dfsg-11+deb12u6_amd64.deb
 gnome-desktop3-data_43.2-2_all.deb
 libgnome-desktop-3-20_43.2-2_amd64.deb
 gir1.2-gnomedesktop-3.0_43.2-2_amd64.deb
@@ -2008,7 +2008,7 @@ mate-utils_1.26.0-1+deb12u1_amd64.deb
 mate-utils-common_1.26.0-1+deb12u1_all.deb
 libmatedict6_1.26.0-1+deb12u1_amd64.deb
 mtr_0.95-1_amd64.deb
-libmpg123-0_1.31.2-1_amd64.deb
+libmpg123-0_1.31.2-1+deb12u1_amd64.deb
 man-db_2.11.2-2_amd64.deb
 python3-mutagen_1.46.0-1_all.deb
 m17n-db_1.8.0-5_all.deb
@@ -2582,10 +2582,10 @@ cairo-dock-gmenu-plug-in_3.4.1+git20201022.a0d3415c-1+b1_amd64.deb
 cairo-dock-plug-in-data_3.4.1+git20201022.a0d3415c-1_all.deb
 cairo-dock-xfce-integration-plug-in_3.4.1+git20201022.a0d3415c-1+b1_amd64.deb
 libcdparanoia0_3.10.2+debian-14_amd64.deb
-chromium-l10n_130.0.6723.91-1~deb12u1_all.deb
-chromium_130.0.6723.91-1~deb12u1_amd64.deb
-chromium-sandbox_130.0.6723.91-1~deb12u1_amd64.deb
-chromium-common_130.0.6723.91-1~deb12u1_amd64.deb
+chromium-common_130.0.6723.116-1~deb12u1_amd64.deb
+chromium_130.0.6723.116-1~deb12u1_amd64.deb
+chromium-l10n_130.0.6723.116-1~deb12u1_all.deb
+chromium-sandbox_130.0.6723.116-1~deb12u1_amd64.deb
 colord-data_1.4.6-2.2_all.deb
 libcolorhug2_1.4.6-2.2_amd64.deb
 libcolord2_1.4.6-2.2_amd64.deb
