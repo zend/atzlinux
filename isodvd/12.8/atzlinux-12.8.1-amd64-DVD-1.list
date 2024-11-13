@@ -1642,12 +1642,14 @@ libkfontinst5_5.27.5-2+deb12u2_amd64.deb
 libkworkspace5-5_5.27.5-2+deb12u2_amd64.deb
 libcolorcorrect5_5.27.5-2+deb12u2_amd64.deb
 libkfontinstui5_5.27.5-2+deb12u2_amd64.deb
+sddm-theme-debian-breeze_5.27.5-2+deb12u2_amd64.deb
 libweather-ion7_5.27.5-2+deb12u2_amd64.deb
 libnotificationmanager1_5.27.5-2+deb12u2_amd64.deb
 plasma-workspace_5.27.5-2+deb12u2_amd64.deb
 libtaskmanager6abi1_5.27.5-2+deb12u2_amd64.deb
 plasma-workspace-data_5.27.5-2+deb12u2_all.deb
 libplasma-geolocation-interface5_5.27.5-2+deb12u2_amd64.deb
+sddm-theme-breeze_5.27.5-2+deb12u2_amd64.deb
 python3-cairo_1.20.1-5+b1_amd64.deb
 libpcaudio0_1.2-2_amd64.deb
 pinentry-gnome3_1.2.1-1_amd64.deb
