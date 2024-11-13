@@ -41,8 +41,6 @@ libexo-common
 libgarcon-1-0
 libgarcon-gtk3-1-0
 libnss3
-lightdm
-lightdm-gtk-greeter
 lxappearance
 mousepad
 net-tools
@@ -393,6 +391,7 @@ sysbench
 xdotool
 bsdextrautils
 wechat
+sddm
 atzlinux-update-patch-kde
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
