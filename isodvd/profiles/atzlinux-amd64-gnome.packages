@@ -516,6 +516,7 @@ sysbench
 xdotool
 bsdextrautils
 wechat
+input-remapper-gtk
 atzlinux-update-patch-gnome
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

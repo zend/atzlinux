@@ -393,6 +393,7 @@ bsdextrautils
 wechat
 sddm
 sddm-theme-debian-breeze
+input-remapper-gtk
 atzlinux-update-patch-kde
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

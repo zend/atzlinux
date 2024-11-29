@@ -607,6 +607,7 @@ sysbench
 xdotool
 bsdextrautils
 wechat
+input-remapper-gtk
 atzlinux-update-patch-xall
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

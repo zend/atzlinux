@@ -442,6 +442,7 @@ sysbench
 xdotool
 bsdextrautils
 wechat
+input-remapper-gtk
 atzlinux-update-patch-xfce
 
 dists-bookworm-files-atzlinux
