@@ -40,7 +40,7 @@ isolinux
 sudo
 
 # add by atzlinux, for 11.8.1, keep stable kernel verison in iso
-linux-image-6.1.0-27-rt-amd64
+#linux-image-6.1.0-27-rt-amd64
 
 # add by atzlinux, need by install
 laptop-detect
