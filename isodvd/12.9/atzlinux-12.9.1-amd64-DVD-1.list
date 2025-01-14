@@ -2151,7 +2151,7 @@ gir1.2-ibus-1.0_1.5.27-5_amd64.deb
 python3-ibus-1.0_1.5.27-5_all.deb
 iotop_0.6-42-ga14256a-0.1+b2_amd64.deb
 input-remapper-gtk_2.0.1-1.1~bpo12+1_all.deb
-python3-inputremapper_1.5.0-1.1_all.deb
+python3-inputremapper_2.0.1-1.1~bpo12+1_all.deb
 input-remapper-daemon_2.0.1-1.1~bpo12+1_all.deb
 libmfx1_22.5.4-1_amd64.deb
 libigdgmm12_22.3.3+ds1-1_amd64.deb
