@@ -28,3 +28,9 @@ systemd-timesyncd
 atzlinux-v12-archive-keyring
 # atzlinux project patch
 atzlinux-update-patch
+
+# add from 12.9.1, new split out fw packages, mostly used
+firmware-nvidia-graphics
+firmware-intel-graphics
+firmware-intel-misc
+firmware-mediatek
