@@ -2096,7 +2096,7 @@ yiyantang_0.7.0-8_amd64.deb
 libyelp0_42.2-1_amd64.deb
 yelp_42.2-1_amd64.deb
 libyajl2_2.1.0-3+deb12u2_amd64.deb
-yt-dlp_2024.12.23-1~bpo12+1_all.deb
+yt-dlp_2025.01.12-1~bpo12+1_all.deb
 yelp-xsl_42.1-2_all.deb
 iso-codes_4.15.0-1_all.deb
 im-config_0.55-2_all.deb
@@ -2588,10 +2588,10 @@ cairo-dock-gmenu-plug-in_3.4.1+git20201022.a0d3415c-1+b1_amd64.deb
 cairo-dock-plug-in-data_3.4.1+git20201022.a0d3415c-1_all.deb
 cairo-dock-xfce-integration-plug-in_3.4.1+git20201022.a0d3415c-1+b1_amd64.deb
 libcdparanoia0_3.10.2+debian-14_amd64.deb
-chromium_131.0.6778.264-1~deb12u1_amd64.deb
-chromium-common_131.0.6778.264-1~deb12u1_amd64.deb
-chromium-l10n_131.0.6778.264-1~deb12u1_all.deb
-chromium-sandbox_131.0.6778.264-1~deb12u1_amd64.deb
+chromium_132.0.6834.83-1~deb12u1_amd64.deb
+chromium-l10n_132.0.6834.83-1~deb12u1_all.deb
+chromium-sandbox_132.0.6834.83-1~deb12u1_amd64.deb
+chromium-common_132.0.6834.83-1~deb12u1_amd64.deb
 colord-data_1.4.6-2.2_all.deb
 libcolorhug2_1.4.6-2.2_amd64.deb
 libcolord2_1.4.6-2.2_amd64.deb
