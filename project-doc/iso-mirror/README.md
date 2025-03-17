@@ -20,7 +20,7 @@
 
   每次更新镜像网站信息，iso 文件信息，均需重新运行该脚本，生成 iso 下载网页：
 
-- iso-10.13.1amd64.htm
+- iso-12.10.1amd64.htm
 
 - iso-11.5.1amd64.htm
 
@@ -109,4 +109,4 @@ crontab：
 一个机器可以同时提供 http 和 https 服务。
 
 ## iso 镜像网站同步
-todo
+https://www.atzlinux.com/download-iso.htm#iso-mirrors
