@@ -517,6 +517,7 @@ xdotool
 bsdextrautils
 wechat
 input-remapper-gtk
+gstreamer1.0-libav
 atzlinux-update-patch-gnome
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
