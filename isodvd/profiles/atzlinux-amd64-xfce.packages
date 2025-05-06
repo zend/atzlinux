@@ -443,6 +443,7 @@ xdotool
 bsdextrautils
 wechat
 input-remapper-gtk
+aria2
 atzlinux-update-patch-xfce
 
 dists-bookworm-files-atzlinux
