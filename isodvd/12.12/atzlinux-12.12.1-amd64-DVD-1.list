@@ -700,10 +700,10 @@ libdolphinvcs5_22.12.3-1_amd64.deb
 desktop-base_12.0.6+nmu1~deb12u1_all.deb
 dictionaries-common_1.29.5_all.deb
 debianutils_5.7-0.5~deb12u1_amd64.deb
-dists-bookworm-files-atzlinux-common_12.11.0_all.deb
-dists-bookworm-files-dep11-atzlinux-common_12.11.0_all.deb
-dists-bookworm-files-dep11-atzlinux_12.11.0_amd64.deb
-dists-bookworm-files-atzlinux_12.11.0_amd64.deb
+dists-bookworm-files-atzlinux-common_12.12.0_all.deb
+dists-bookworm-files-dep11-atzlinux_12.12.0_amd64.deb
+dists-bookworm-files-atzlinux_12.12.0_amd64.deb
+dists-bookworm-files-dep11-atzlinux-common_12.12.0_all.deb
 libdbus-glib-1-2_0.112-3_amd64.deb
 drkonqi_5.27.5-2_amd64.deb
 discover-data_2.2013.01.13_all.deb
