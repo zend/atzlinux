@@ -442,6 +442,7 @@ bsdextrautils
 wechat
 input-remapper-gtk
 aria2
+alsa-ucm-conf
 atzlinux-update-patch-xfce
 
 dists-bookworm-files-atzlinux

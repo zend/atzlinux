@@ -516,6 +516,7 @@ wechat
 input-remapper-gtk
 gstreamer1.0-libav
 aria2
+alsa-ucm-conf
 atzlinux-update-patch-gnome
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
