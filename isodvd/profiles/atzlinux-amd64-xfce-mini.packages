@@ -33,7 +33,7 @@ xfce4-settings
 xfconf
 xfce4-terminal
 
-pulseaudio
+pipewire-audio
 pavucontrol
 
 mousepad

@@ -230,7 +230,7 @@ procinfo
 ntpdate
 tlp
 gdebi
-pulseaudio
+pipewire-audio
 firejail
 vim-gtk3
 transmission-gtk
@@ -269,7 +269,6 @@ freerdp2-x11
 rar
 unrar
 linux-headers-rt-amd64
-pulseaudio-module-bluetooth
 firmware-brcm80211
 tumbler
 eject
