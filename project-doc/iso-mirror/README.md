@@ -51,7 +51,7 @@ https://motion.atzlinux.com:3000/d/Sj56fJUnz/atzlinux-isoxia-zai-dian-jian-kong-
 
 - check-iso-error-history.txt 历史所有检测异常情况
 
-目前在 铜豌豆 www 主网站服务器、新加坡华为云节点机器部署该监控。
+目前在 铜豌豆 www 主网站服务器、四川巴中联通机器部署该监控。
 
 1.www 服务器
 - https://www.atzlinux.com/atzlinux-cd/check-iso-error.txt
@@ -61,10 +61,10 @@ crontab：
 
 */13 * * * * cd /home/atzlinux/html/atzlinux-cd/; ./check-iso.sh
 
-2.新加坡华为云
+2.四川巴中联通
 
-- https://xjphwy.atzlinux.com/atzlinux-cd/check-iso-error.txt
-- https://xjphwy.atzlinux.com/atzlinux-cd/check-iso-error-history.txt
+- http://sc-bz-lt-apt.atzlinux.com:60000/atzlinux-cd/check-iso-error.txt
+- http://sc-bz-lt-apt.atzlinux.com:60000/atzlinux-cd/check-iso-error-history.txt
 
 crontab：
 
