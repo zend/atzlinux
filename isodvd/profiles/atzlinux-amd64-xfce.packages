@@ -443,6 +443,7 @@ wechat
 input-remapper-gtk
 aria2
 alsa-ucm-conf
+tree
 atzlinux-update-patch-xfce
 
 dists-bookworm-files-atzlinux

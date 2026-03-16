@@ -396,6 +396,7 @@ kimageformat-plugins
 libkf5kdelibs4support5-bin
 pipewire-audio
 alsa-ucm-conf
+tree
 atzlinux-update-patch-kde
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux

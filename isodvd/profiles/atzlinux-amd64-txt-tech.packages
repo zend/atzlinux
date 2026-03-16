@@ -229,6 +229,7 @@ tools-atzlinux-dev-conf
 wpasupplicant
 sysbench
 aria2
+tree
 atzlinux-update-patch-txt-tech
 dists-bookworm-files-atzlinux
 dists-bookworm-files-dep11-atzlinux
