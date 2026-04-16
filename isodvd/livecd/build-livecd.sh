@@ -254,7 +254,7 @@ configure_live_build() {
         --security "false" \
         --firmware-chroot "false" \
         --cache "false" \
-        --bootloader "grub" \
+        --bootloader "syslinux" \
         --mode "debian" \
         || {
             echo "Error: lb config failed"
