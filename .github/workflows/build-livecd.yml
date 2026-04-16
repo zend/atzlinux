@@ -41,9 +41,10 @@ jobs:
       - name: Build LiveCD
         run: |
           cd isodvd/livecd
-          ls -la
-          # Remove config directory that conflicts with lb config
+          # Remove cached config and pre-create structure to prevent lb config error
           sudo rm -rf config/
+          mkdir -p config/common
+          touch config/bootstrap config/chroot config/binary config/source
           sudo ./build-livecd.sh --mirror debian
 
       - name: Upload LiveCD artifact
