@@ -216,12 +216,21 @@ configure_live_build() {
     rm -f config/common 2>/dev/null || true
     rm -rf config/common 2>/dev/null || true
 
+    # Debug: Check state before import_build_config
+    echo "DEBUG: After rm, checking config/"
+    ls -la config/ 2>/dev/null || echo "  config/ does not exist"
+
     # Import build config to get DEBVERSION
     import_build_config
+
+    # Debug: Check state after import_build_config
+    echo "DEBUG: After import_build_config, checking config/"
+    ls -la config/ 2>/dev/null || echo "  config/ does not exist"
 
     # Run lb config with AtzLinux settings
     # Note: Disable security repository since third-party mirrors use different naming
     # Security updates are included in the main mirror
+    echo "DEBUG: Running lb config..."
     lb config noauto \
         --distribution bookworm \
         --architecture amd64 \
