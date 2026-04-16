@@ -439,6 +439,3 @@ aria2
 alsa-ucm-conf
 tree
 atzlinux-update-patch-xfce
-
-dists-bookworm-files-atzlinux
-dists-bookworm-files-dep11-atzlinux
