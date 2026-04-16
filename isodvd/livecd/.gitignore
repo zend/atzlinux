@@ -37,3 +37,4 @@ config/package-lists/
 !config/chroot/.gitkeep
 !config/chroot_apt/.gitkeep
 !config/common/.gitkeep
+config/common
