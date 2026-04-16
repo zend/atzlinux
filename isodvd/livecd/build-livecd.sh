@@ -212,6 +212,10 @@ configure_live_build() {
     # Clean any previous config
     rm -rf config/
 
+    # Also clean any cached config that might exist
+    rm -f config/common 2>/dev/null || true
+    rm -rf config/common 2>/dev/null || true
+
     # Import build config to get DEBVERSION
     import_build_config
 
