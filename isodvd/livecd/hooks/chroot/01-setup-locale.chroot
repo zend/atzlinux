@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Hook: Configure Chinese locale (zh_CN.UTF-8)
+# Runs inside the chroot during live-build
+#
+
+set -e
+
+echo "P: Configuring Chinese locale..."
+
+# Generate zh_CN.UTF-8 locale
+locale-gen zh_CN.UTF-8
+
+# Set default locale
+update-locale LANG=zh_CN.UTF-8 LANGUAGE="zh_CN:zh"
+
+# Also enable other common Chinese locales for compatibility
+echo "zh_CN.GB18030 UTF-8" >> /etc/locale.gen
+echo "zh_CN.GBK UTF-8" >> /etc/locale.gen
+echo "zh_CN.GB2312 UTF-8" >> /etc/locale.gen
+locale-gen
+
+echo "P: Chinese locale configured."

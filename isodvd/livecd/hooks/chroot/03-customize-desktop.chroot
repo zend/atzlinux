@@ -1,0 +1,75 @@
+#!/bin/bash
+#
+# Hook: Apply AtzLinux desktop customizations
+# Runs inside the chroot during live-build
+#
+
+set -e
+
+echo "P: Applying desktop customizations..."
+
+# Create AtzLinux branding file
+cat > /etc/atzlinux-version << 'VERSION'
+AtzLinux LiveCD
+VERSION
+
+# Configure lightdm for auto-login (live user)
+if [[ -d /etc/lightdm ]]; then
+    mkdir -p /etc/lightdm/lightdm.conf.d
+    cat > /etc/lightdm/lightdm.conf.d/90-atzlinux.conf << 'LIGHTDM'
+[Seat:*]
+autologin-user=live
+autologin-user-timeout=0
+user-session=xfce
+LIGHTDM
+fi
+
+# Configure XFCE4 defaults for live user
+mkdir -p /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+
+cat > /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml << 'XFCE_DESKTOP'
+<?xml version="1.0" encoding="UTF-8"?>
+<channel name="xfce4-desktop" version="1.0">
+  <property name="desktop-icons" type="empty">
+    <property name="style" type="int" value="2"/>
+  </property>
+</channel>
+XFCE_DESKTOP
+
+# Set default panel layout
+mkdir -p /etc/skel/.config/xfce4/panel
+
+# Configure session
+mkdir -p /etc/skel/.config/xfce4/xfce4-session
+
+cat > /etc/skel/.config/xfce4/xfce4-session/xfce4-session.xml << 'XFCE_SESSION'
+<?xml version="1.0" encoding="UTF-8"?>
+<channel name="xfce4-session" version="1.0">
+  <property name="general" type="empty">
+    <property name="FailsafeSessionName" type="string" value="Failsafe"/>
+  </property>
+</channel>
+XFCE_SESSION
+
+# Create a welcome file on desktop
+mkdir -p /etc/skel/Desktop
+cat > /etc/skel/Desktop/欢迎使用铜豌豆Linux.txt << 'WELCOME'
+欢迎使用 铜豌豆 Linux (AtzLinux)  LiveCD！
+
+这是一个可以直接运行的演示版本，不会修改您的硬盘。
+
+主要特性：
+- 基于 Debian 12 (bookworm)
+- 中文本地化界面和输入法
+- 预装常用中文软件
+- 开箱即用的桌面体验
+
+官方网站: https://www.atzlinux.com/
+
+提示：本系统运行在内存中，重启后所有更改将丢失。
+
+WELCOME
+
+chmod +x /etc/skel/Desktop/欢迎使用铜豌豆Linux.txt
+
+echo "P: Desktop customizations applied."

@@ -1,0 +1,58 @@
+#!/bin/bash
+#
+# Hook: Configure fcitx and sogoupinyin input methods
+# Runs inside the chroot during live-build
+#
+
+set -e
+
+echo "P: Configuring input methods..."
+
+# Ensure fcitx is configured as the default input method
+# Create /etc/X11/Xsession.d entry for fcitx
+cat > /etc/X11/Xsession.d/95im-config << 'IMCONFIG'
+# Set fcitx as default input method
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE="fcitx"
+export GTK_IM_MODULE="fcitx"
+export CLUTTER_IM_MODULE="fcitx"
+IMCONFIG
+
+# Ensure fcitx starts automatically for live user
+mkdir -p /etc/skel/.config/autostart
+
+cat > /etc/skel/.config/autostart/fcitx.desktop << 'FCITX_DESKTOP'
+[Desktop Entry]
+Type=Application
+Name=Fcitx
+Comment=Start Fcitx Input Method
+Exec=fcitx
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+FCITX_DESKTOP
+
+# Create default fcitx profile with sogoupinyin enabled
+mkdir -p /etc/skel/.config/fcitx
+
+cat > /etc/skel/.config/fcitx/profile << 'FCITX_PROFILE'
+[Profile]
+# Use sogoupinyin as default
+IMName=sogoupinyin
+# Show tray icon
+ShowPreedit=False
+ShowStatusBar=True
+# Switch with Ctrl+Space
+TriggerKey=CTRL_SPACE
+
+[IM]
+# Enable sogoupinyin
+sogoupinyin=True
+# Also enable keyboard layouts
+keyboard-us=True
+
+[IM/sogoupinyin]
+# Sogou pinyin specific settings
+FCITX_PROFILE
+
+echo "P: Input methods configured."

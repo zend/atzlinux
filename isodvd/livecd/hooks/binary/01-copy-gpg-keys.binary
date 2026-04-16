@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Hook: Copy GPG keys to live filesystem
+# Runs during binary assembly (after chroot is complete)
+#
+
+set -e
+
+echo "P: Copying GPG keys to ISO..."
+
+# The keys should already be in config/chroot_sources/
+# They will be automatically included in the chroot
+# This hook ensures they're properly set up in the live system
+
+# If we need to do any additional key setup, do it here
+# For now, the keys copied to chroot_sources are sufficient
+
+echo "P: GPG keys configured."
