@@ -252,6 +252,10 @@ configure_live_build() {
     sed -i 's/\.\/debian-security/# .\/debian-security/' config/chroot_apt/apt.conf 2>/dev/null || true
     sed -i 's/bookworm\/updates/# bookworm\/updates/' config/chroot/sources.list 2>/dev/null || true
 
+    # Configure xorriso to allow files larger than 4GiB (ISO-9660 limitation)
+    mkdir -p config/common
+    echo 'XORRISO_OPTIONS="-allow-limited-size"' > config/common/xorriso
+
     # Create directories for additional files (these are actual directories)
     mkdir -p config/chroot_sources config/chroot_apt
 
