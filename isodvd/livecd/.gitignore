@@ -1,0 +1,39 @@
+# live-build build artifacts
+# Generated during lb config and lb build
+
+# Build directories
+chroot/
+binary/
+.build/
+cache/
+
+# Lock and log files
+.lock
+*.log
+
+# Package list outputs
+*.packages
+*.contents
+chroot.headers
+chroot.packages.*
+
+# Generated ISO files
+*.iso
+
+# Generated config directories (created by lb config)
+config/binary/
+config/bootstrap/
+config/chroot/
+config/chroot_apt/
+config/common/
+config/source/
+config/archives/
+config/hooks/
+config/package-lists/
+
+# Keep the directory structure with .gitkeep files
+!config/binary/.gitkeep
+!config/bootstrap/.gitkeep
+!config/chroot/.gitkeep
+!config/chroot_apt/.gitkeep
+!config/common/.gitkeep
