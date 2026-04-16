@@ -179,10 +179,7 @@ chromium-l10n
 thunderbird-l10n-zh-cn
 synaptic
 pavucontrol
-linuxqq
 sogoupinyin
-wps-office
-wps-office-fonts
 amd64-microcode
 intel-microcode
 bash-completion
@@ -343,8 +340,6 @@ app.web.163.music
 app.web.baidu.map
 app.web.kugou
 app.web.youdao.dict
-com.alibabainc.dingtalk
-baidunetdisk
 dbus-x11
 distro-info-data
 edid-decode
@@ -431,7 +426,6 @@ atzlinux-store
 backgrounds-atzlinux
 lightdm-gtk-greeter-settings
 libvips42
-netease-cloud-music-gtk
 tools-atzlinux
 libssl1.1
 psensor
