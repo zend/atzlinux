@@ -252,13 +252,13 @@ configure_live_build() {
     sed -i 's/\.\/debian-security/# .\/debian-security/' config/chroot_apt/apt.conf 2>/dev/null || true
     sed -i 's/bookworm\/updates/# bookworm\/updates/' config/chroot/sources.list 2>/dev/null || true
 
-    # Fix LB_INITRAMFS - set to initramfs-tools instead of auto to avoid "auto" package error
-    sed -i 's/LB_INITRAMFS="auto"/LB_INITRAMFS="initramfs-tools"/' config/common
-
     # Configure xorriso to allow files larger than 4GiB (ISO-9660 limitation)
-    rm -rf config/common 2>/dev/null || true
+    rm -rf config/common/xorriso 2>/dev/null || true
     mkdir -p config/common
     echo 'XORRISO_OPTIONS="-allow-limited-size"' > config/common/xorriso
+
+    # Fix LB_INITRAMFS - set to initramfs-tools instead of auto to avoid "auto" package error
+    sed -i 's/LB_INITRAMFS="auto"/LB_INITRAMFS="initramfs-tools"/' config/common
 
     # Create directories for additional files (these are actual directories)
     mkdir -p config/chroot_sources config/chroot_apt
