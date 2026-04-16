@@ -41,7 +41,7 @@ jobs:
       - name: Build LiveCD
         run: |
           cd isodvd/livecd
-          sudo ./build-livecd.sh --mirror huawei
+          sudo ./build-livecd.sh --mirror debian
 
       - name: Upload LiveCD artifact
         uses: actions/upload-artifact@v4
