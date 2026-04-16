@@ -253,6 +253,7 @@ configure_live_build() {
     sed -i 's/bookworm\/updates/# bookworm\/updates/' config/chroot/sources.list 2>/dev/null || true
 
     # Configure xorriso to allow files larger than 4GiB (ISO-9660 limitation)
+    rm -rf config/common 2>/dev/null || true
     mkdir -p config/common
     echo 'XORRISO_OPTIONS="-allow-limited-size"' > config/common/xorriso
 
