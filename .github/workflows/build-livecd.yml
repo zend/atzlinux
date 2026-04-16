@@ -42,6 +42,8 @@ jobs:
         run: |
           cd isodvd/livecd
           sudo rm -rf config/ cache/ chroot/ binary/ .build/  # Clean any previous build artifacts
+          sudo rm -f config/common  # Remove any file that lb config needs as directory
+          cat /etc/live/build.conf 2>/dev/null || echo "No system build.conf"
           sudo ./build-livecd.sh --mirror debian
 
       - name: Upload LiveCD artifact
