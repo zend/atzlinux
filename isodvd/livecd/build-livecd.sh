@@ -341,6 +341,34 @@ copy_hooks() {
     fi
 }
 
+# Copy bootloader customization files
+copy_bootloader_files() {
+    local bootloader_dir="$SCRIPT_DIR/bootloader"
+
+    if [[ ! -d "$bootloader_dir" ]]; then
+        return
+    fi
+
+    # Create bootloader config directory for syslinux/isolinux
+    mkdir -p config/bootloaders/isolinux
+
+    # Copy splash.png if exists (syslinux boot screen background, 640x480)
+    if [[ -f "$bootloader_dir/splash.png" ]]; then
+        cp "$bootloader_dir/splash.png" config/bootloaders/isolinux/
+        if [[ "$QUIET" != true ]]; then
+            echo "  Copied splash.png for boot screen"
+        fi
+    fi
+
+    # Copy splash.svg.in if exists (SVG template with variable substitution)
+    if [[ -f "$bootloader_dir/splash.svg.in" ]]; then
+        cp "$bootloader_dir/splash.svg.in" config/bootloaders/isolinux/
+        if [[ "$QUIET" != true ]]; then
+            echo "  Copied splash.svg.in template for boot screen"
+        fi
+    fi
+}
+
 # Configure live-build
 configure_live_build() {
     echo "Configuring live-build..."
@@ -477,6 +505,9 @@ EOF
 
     # Copy hooks
     copy_hooks
+
+    # Copy bootloader customization files (splash screen, etc.)
+    copy_bootloader_files
 
     echo "Live-build configured successfully."
 }

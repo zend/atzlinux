@@ -144,15 +144,28 @@ The liveCD provides a demo/try-before-install experience with the same XFCE desk
 
 ```bash
 cd isodvd/livecd
-sudo ./build-livecd.sh [--mirror huawei|tencent|debian]
+sudo ./build-livecd.sh [--mirror ustc|huawei|tencent|debian] [--quiet]
 ```
 
-**Mirror options**:
-- `huawei` (default) - Huawei Cloud mirrors
-- `tencent` - Tencent Cloud mirrors
-- `debian` - Official Debian mirrors
+**Options**:
+- `--mirror` - Mirror to use (default: ustc)
+- `--quiet` - Suppress verbose output, only show warnings/errors
 
-**Output**: `/tmp/livecd/atzlinux-live-<version>-amd64.iso`
+**Output**: `isodvd/livecd/atzlinux-live-<version>-amd64.iso`
+
+### Customize Boot Screen
+
+To customize the syslinux/isolinux boot screen background:
+
+1. Create a 640x480 PNG image named `splash.png`
+2. Place it in `isodvd/livecd/bootloader/splash.png`
+
+The build script will automatically copy it to the ISO boot directory.
+
+Alternatively, use `splash.svg.in` SVG template with these variables:
+- `@PROJECT@` - Project name (e.g., "AtzLinux")
+- `@DISTRIBUTION@` - Distribution name (e.g., "bookworm")
+- `@VERSION@` - Version number
 
 **Testing**:
 ```bash
