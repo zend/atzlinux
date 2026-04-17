@@ -6,15 +6,114 @@
 
 set -e
 
-# Get script directory
+# Get script directory (suppress set -e tracing)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ISODVD_DIR="$(dirname "$SCRIPT_DIR")"
 PROJECT_DIR="$(dirname "$ISODVD_DIR")"
 
 # Default values
-MIRROR="huawei"
-DEBIAN_MIRROR="https://mirrors.huaweicloud.com/debian/"
-SECURITY_MIRROR="https://mirrors.huaweicloud.com/debian-security/"
+MIRROR="ustc"
+DEBIAN_MIRROR="https://mirrors.ustc.edu.cn/debian/"
+SECURITY_MIRROR="https://mirrors.ustc.edu.cn/debian-security/"
+KEEP_ARTIFACTS=false
+QUIET=false
+
+# Cleanup function - removes build artifacts
+cleanup() {
+    local exit_code=$?
+    cd "$SCRIPT_DIR"
+
+    if [[ "$KEEP_ARTIFACTS" == true ]]; then
+        echo ""
+        echo "=== Preserving build artifacts (--keep specified) ==="
+        echo "Build artifacts left in: $SCRIPT_DIR"
+        echo "To clean up manually, run: sudo rm -rf config chroot cache .build local"
+        exit $exit_code
+    fi
+
+    echo ""
+    echo "=== Cleaning up build artifacts ==="
+
+    # Remove generated build directories and files
+    rm -rf config/ 2>/dev/null || true
+    rm -rf chroot/ 2>/dev/null || true
+    rm -rf cache/ 2>/dev/null || true
+    rm -rf .build/ 2>/dev/null || true
+    rm -rf local/ 2>/dev/null || true
+    rm -f chroot.headers 2>/dev/null || true
+    rm -f chroot.packages.* 2>/dev/null || true
+    rm -f binary.* 2>/dev/null || true
+    rm -f live-image-*.* 2>/dev/null || true
+
+    # Remove log files (keep build.log for reference if build succeeded)
+    if [[ $exit_code -ne 0 ]]; then
+        rm -f build.log 2>/dev/null || true
+    fi
+
+    echo "Cleanup complete."
+    exit $exit_code
+}
+
+# Cleanup function for errors - preserves logs for debugging
+cleanup_on_error() {
+    local exit_code=$?
+    local line_no=$1
+
+    echo ""
+    echo "=== Build failed at line $line_no (exit code: $exit_code) ==="
+
+    if [[ "$KEEP_ARTIFACTS" == true ]]; then
+        echo "Build artifacts preserved for debugging (--keep specified)"
+        exit $exit_code
+    fi
+
+    echo "Preserving build.log for debugging..."
+    if [[ -f "$SCRIPT_DIR/build.log" ]]; then
+        mv "$SCRIPT_DIR/build.log" "$SCRIPT_DIR/build-failed-$(date +%Y%m%d-%H%M%S).log" 2>/dev/null || true
+        echo "Log saved to: build-failed-*.log"
+    fi
+
+    # Perform normal cleanup
+    cd "$SCRIPT_DIR"
+    rm -rf config/ chroot/ cache/ .build/ local/ 2>/dev/null || true
+    rm -f chroot.headers chroot.packages.* binary.* live-image-*.* 2>/dev/null || true
+
+    echo "Cleanup complete. Check the saved log for error details."
+    exit $exit_code
+}
+
+# Initial cleanup - remove any leftover artifacts from previous runs
+initial_cleanup() {
+    echo "Checking for leftover build artifacts..."
+
+    cd "$SCRIPT_DIR"
+
+    local found=false
+    for item in config chroot cache .build local chroot.headers chroot.packages.* binary.* live-image-*.*; do
+        if [[ -e "$item" ]]; then
+            found=true
+            break
+        fi
+    done
+
+    if [[ "$found" == true ]]; then
+        echo "Found leftover artifacts from previous build. Cleaning up..."
+        rm -rf config/ chroot/ cache/ .build/ local/ 2>/dev/null || true
+        rm -f chroot.headers chroot.packages.* binary.* live-image-*.* 2>/dev/null || true
+        echo "Initial cleanup complete."
+    else
+        echo "No leftover artifacts found."
+    fi
+}
+
+# Set up error handling traps
+setup_traps() {
+    # Trap errors and call cleanup_on_error with the line number
+    trap 'cleanup_on_error $LINENO' ERR
+
+    # Trap interrupts (Ctrl+C) and call normal cleanup
+    trap 'echo ""; echo "Build interrupted by user"; cleanup' INT TERM
+}
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -23,12 +122,29 @@ while [[ $# -gt 0 ]]; do
             MIRROR="$2"
             shift 2
             ;;
+        --keep)
+            KEEP_ARTIFACTS=true
+            shift
+            ;;
+        --quiet|-q)
+            QUIET=true
+            shift
+            ;;
         --help|-h)
-            echo "Usage: $0 [--mirror huawei|tencent|debian]"
+            echo "Usage: $0 [--mirror ustc|huawei|tencent|debian] [--keep] [--quiet]"
             echo ""
             echo "Options:"
-            echo "  --mirror    Mirror to use (default: huawei)"
+            echo "  --mirror    Mirror to use (default: ustc)"
+            echo "  --keep      Keep build artifacts after completion (for debugging)"
+            echo "  --quiet     Suppress verbose output, only show warnings/errors"
             echo "  --help      Show this help message"
+            echo ""
+            echo "Examples:"
+            echo "  sudo $0                              # Build with USTC mirror (default)"
+            echo "  sudo $0 --mirror huawei              # Build with Huawei mirror"
+            echo "  sudo $0 --mirror tencent             # Build with Tencent mirror"
+            echo "  sudo $0 --mirror debian              # Build with official Debian mirror"
+            echo "  sudo $0 --keep                       # Keep artifacts for debugging"
             exit 0
             ;;
         *)
@@ -41,6 +157,10 @@ done
 
 # Set mirror based on selection
 case $MIRROR in
+    ustc)
+        DEBIAN_MIRROR="https://mirrors.ustc.edu.cn/debian"
+        SECURITY_MIRROR="https://mirrors.ustc.edu.cn/debian-security"
+        ;;
     huawei)
         DEBIAN_MIRROR="https://mirrors.huaweicloud.com/debian"
         SECURITY_MIRROR="https://mirrors.huaweicloud.com/debian-security"
@@ -63,7 +183,7 @@ echo ""
 # Check for root privileges
 if [[ $EUID -ne 0 ]]; then
     echo "Error: This script must be run as root (for live-build)"
-    echo "Usage: sudo $0 [--mirror huawei|tencent|debian]"
+    echo "Usage: sudo $0 [--mirror ustc|huawei|tencent|debian] [--keep]"
     exit 1
 fi
 
@@ -120,7 +240,9 @@ generate_package_list() {
         exit 1
     fi
 
-    echo "Generating package list from $packages_file..."
+    if [[ "$QUIET" != true ]]; then
+        echo "Generating package list from $packages_file..."
+    fi
 
     # Create package-lists directory
     mkdir -p "$SCRIPT_DIR/config/package-lists"
@@ -131,7 +253,9 @@ generate_package_list() {
     # Add syslinux-utils for isohybrid (needed for hybrid ISO creation)
     echo "syslinux-utils" >> "$output_file"
 
-    echo "Package list written to $output_file"
+    if [[ "$QUIET" != true ]]; then
+        echo "Package list written to $output_file"
+    fi
 }
 
 # Copy GPG keys
@@ -144,7 +268,9 @@ copy_gpg_keys() {
         return
     fi
 
-    echo "Copying GPG keys..."
+    if [[ "$QUIET" != true ]]; then
+        echo "Copying GPG keys..."
+    fi
 
     # Create chroot_sources directory
     mkdir -p "$output_dir"
@@ -153,19 +279,25 @@ copy_gpg_keys() {
     for key in "$keys_dir"/*.gpg "$keys_dir"/*.asc; do
         if [[ -f "$key" ]]; then
             cp "$key" "$output_dir/"
-            echo "  Copied: $(basename "$key")"
+            if [[ "$QUIET" != true ]]; then
+                echo "  Copied: $(basename "$key")"
+            fi
         fi
     done
 
     # Copy AtzLinux keyring from host system if installed
     if [[ -f /usr/share/keyrings/atzlinux-archive-keyring.gpg ]]; then
         cp /usr/share/keyrings/atzlinux-archive-keyring.gpg "$output_dir/"
-        echo "  Copied: atzlinux-archive-keyring.gpg (from host)"
+        if [[ "$QUIET" != true ]]; then
+            echo "  Copied: atzlinux-archive-keyring.gpg (from host)"
+        fi
     elif [[ -f /etc/apt/trusted.gpg.d/atzlinux-archive-keyring.gpg ]]; then
         cp /etc/apt/trusted.gpg.d/atzlinux-archive-keyring.gpg "$output_dir/"
-        echo "  Copied: atzlinux-archive-keyring.gpg (from host apt)"
+        if [[ "$QUIET" != true ]]; then
+            echo "  Copied: atzlinux-archive-keyring.gpg (from host apt)"
+        fi
     else
-        echo "  Warning: AtzLinux keyring not found on host system"
+        echo "Warning: AtzLinux keyring not found on host system"
     fi
 }
 
@@ -178,7 +310,9 @@ copy_hooks() {
         return
     fi
 
-    echo "Copying hooks..."
+    if [[ "$QUIET" != true ]]; then
+        echo "Copying hooks..."
+    fi
 
     # Copy chroot hooks
     if [[ -d "$hooks_dir/chroot" ]]; then
@@ -186,7 +320,9 @@ copy_hooks() {
         for hook in "$hooks_dir/chroot"/*.chroot; do
             if [[ -f "$hook" ]]; then
                 cp "$hook" config/hooks/normal/
-                echo "  Copied chroot hook: $(basename "$hook")"
+                if [[ "$QUIET" != true ]]; then
+                    echo "  Copied chroot hook: $(basename "$hook")"
+                fi
             fi
         done
     fi
@@ -197,7 +333,9 @@ copy_hooks() {
         for hook in "$hooks_dir/binary"/*.binary; do
             if [[ -f "$hook" ]]; then
                 cp "$hook" config/hooks/binary/
-                echo "  Copied binary hook: $(basename "$hook")"
+                if [[ "$QUIET" != true ]]; then
+                    echo "  Copied binary hook: $(basename "$hook")"
+                fi
             fi
         done
     fi
@@ -209,66 +347,85 @@ configure_live_build() {
 
     cd "$SCRIPT_DIR"
 
-    # Clean any previous config
-    rm -rf config/
-
-    # Also clean any cached config that might exist
-    rm -f config/common 2>/dev/null || true
-    rm -rf config/common 2>/dev/null || true
-
-    # Debug: Check state before import_build_config
-    echo "DEBUG: After rm, checking config/"
-    ls -la config/ 2>/dev/null || echo "  config/ does not exist"
-
     # Import build config to get DEBVERSION
     import_build_config
 
-    # Debug: Check state after import_build_config
-    echo "DEBUG: After import_build_config, checking config/"
-    ls -la config/ 2>/dev/null || echo "  config/ does not exist"
+    # Clean up any leftover config directories from previous lb config runs
+    rm -rf config/binary config/bootstrap config/chroot config/source 2>/dev/null || true
 
     # Run lb config with AtzLinux settings
     # Note: Disable security repository since third-party mirrors use different naming
     # Security updates are included in the main mirror
-    echo "DEBUG: Running lb config..."
-    lb config noauto \
-        --distribution bookworm \
-        --architecture amd64 \
-        --mirror-bootstrap "$DEBIAN_MIRROR" \
-        --mirror-binary "$DEBIAN_MIRROR" \
-        --mirror-chroot "$DEBIAN_MIRROR" \
-        --mirror-chroot-security "$DEBIAN_MIRROR" \
-        --mirror-chroot-backports "$DEBIAN_MIRROR" \
-        --mirror-binary-security "$DEBIAN_MIRROR" \
-        --mirror-binary-backports "$DEBIAN_MIRROR" \
-        --archive-areas "main contrib non-free non-free-firmware" \
-        --bootappend-live "boot=live components locales=zh_CN.UTF-8 keyboard-layouts=us" \
-        --debian-installer "false" \
-        --win32-loader "false" \
-        --iso-application "AtzLinux Live" \
-        --iso-preparer "AtzLinux Project" \
-        --iso-publisher "AtzLinux" \
-        --iso-volume "AtzLinux Live $DEBVERSION" \
-        --linux-flavours "amd64" \
-        --linux-packages "linux-image linux-headers" \
-        --security "false" \
-        --firmware-chroot "false" \
-        --cache "false" \
-        --bootloader "grub" \
-        --mode "debian" \
-        || {
-            echo "Error: lb config failed"
-            exit 1
-        }
+    if [[ "$QUIET" == true ]]; then
+        lb config noauto \
+            --distribution bookworm \
+            --architecture amd64 \
+            --mirror-bootstrap "$DEBIAN_MIRROR" \
+            --mirror-binary "$DEBIAN_MIRROR" \
+            --mirror-chroot "$DEBIAN_MIRROR" \
+            --mirror-chroot-security "$DEBIAN_MIRROR" \
+            --mirror-chroot-backports "$DEBIAN_MIRROR" \
+            --mirror-binary-security "$DEBIAN_MIRROR" \
+            --mirror-binary-backports "$DEBIAN_MIRROR" \
+            --archive-areas "main contrib non-free non-free-firmware" \
+            --bootappend-live "boot=live components locales=zh_CN.UTF-8 keyboard-layouts=us" \
+            --debian-installer "false" \
+            --win32-loader "false" \
+            --iso-application "AtzLinux Live" \
+            --iso-preparer "AtzLinux Project" \
+            --iso-publisher "AtzLinux" \
+            --iso-volume "AtzLinux Live $DEBVERSION" \
+            --linux-flavours "amd64" \
+            --linux-packages "linux-image linux-headers" \
+            --security "false" \
+            --firmware-chroot "false" \
+            --cache "false" \
+            --bootloader "grub" \
+            --mode "debian" \
+            > /dev/null \
+            || {
+                echo "Error: lb config failed"
+                exit 1
+            }
+    else
+        lb config noauto \
+            --distribution bookworm \
+            --architecture amd64 \
+            --mirror-bootstrap "$DEBIAN_MIRROR" \
+            --mirror-binary "$DEBIAN_MIRROR" \
+            --mirror-chroot "$DEBIAN_MIRROR" \
+            --mirror-chroot-security "$DEBIAN_MIRROR" \
+            --mirror-chroot-backports "$DEBIAN_MIRROR" \
+            --mirror-binary-security "$DEBIAN_MIRROR" \
+            --mirror-binary-backports "$DEBIAN_MIRROR" \
+            --archive-areas "main contrib non-free non-free-firmware" \
+            --bootappend-live "boot=live components locales=zh_CN.UTF-8 keyboard-layouts=us" \
+            --debian-installer "false" \
+            --win32-loader "false" \
+            --iso-application "AtzLinux Live" \
+            --iso-preparer "AtzLinux Project" \
+            --iso-publisher "AtzLinux" \
+            --iso-volume "AtzLinux Live $DEBVERSION" \
+            --linux-flavours "amd64" \
+            --linux-packages "linux-image linux-headers" \
+            --security "false" \
+            --firmware-chroot "false" \
+            --cache "false" \
+            --bootloader "grub" \
+            --mode "debian" \
+            || {
+                echo "Error: lb config failed"
+                exit 1
+            }
+    fi
 
     # Disable security repository in apt sources (Huawei mirror uses different naming)
     sed -i 's/\.\/debian-security/# .\/debian-security/' config/chroot_apt/apt.conf 2>/dev/null || true
     sed -i 's/bookworm\/updates/# bookworm\/updates/' config/chroot/sources.list 2>/dev/null || true
 
-    # Configure xorriso to allow files larger than 4GiB (ISO-9660 limitation)
-    rm -rf config/common/xorriso 2>/dev/null || true
-    mkdir -p config/common
-    echo 'XORRISO_OPTIONS="-allow-limited-size"' > config/common/xorriso
+    # Allow files larger than 4GiB in ISO (ISO-9660 limitation)
+    # GENISOIMAGE_OPTIONS_EXTRA is defined in config/common file
+    sed -i 's/GENISOIMAGE_OPTIONS_EXTRA=""/GENISOIMAGE_OPTIONS_EXTRA="-allow-limited-size"/' config/common
 
     # Fix LB_INITRAMFS - set to initramfs-tools instead of auto to avoid "auto" package error
     sed -i 's/LB_INITRAMFS="auto"/LB_INITRAMFS="initramfs-tools"/' config/common
@@ -282,10 +439,14 @@ configure_live_build() {
     # Copy AtzLinux keyring from host (required for apt to trust the repository)
     if [[ -f /usr/share/keyrings/atzlinux-archive-keyring.gpg ]]; then
         cp /usr/share/keyrings/atzlinux-archive-keyring.gpg config/archives/atzlinux.key
-        echo "  Copied AtzLinux keyring to archives"
+        if [[ "$QUIET" != true ]]; then
+            echo "  Copied AtzLinux keyring to archives"
+        fi
     elif [[ -f /etc/apt/trusted.gpg.d/atzlinux-archive-keyring.gpg ]]; then
         cp /etc/apt/trusted.gpg.d/atzlinux-archive-keyring.gpg config/archives/atzlinux.key
-        echo "  Copied AtzLinux keyring from apt to archives"
+        if [[ "$QUIET" != true ]]; then
+            echo "  Copied AtzLinux keyring from apt to archives"
+        fi
     else
         echo "  Warning: AtzLinux keyring not found on host system"
     fi
@@ -295,12 +456,16 @@ configure_live_build() {
 deb http://deb.atzlinux.com:60000/atzlinux bookworm main contrib non-free non-free-firmware
 deb https://apt.atzlinux.com/atzlinux bookworm main
 EOF
-    echo "  Created AtzLinux sources list in archives"
+    if [[ "$QUIET" != true ]]; then
+        echo "  Created AtzLinux sources list in archives"
+    fi
 
     # Add apt-utils to binary packages (needed for apt-ftparchive during ISO creation)
     mkdir -p config/package-lists
     echo "apt-utils" > config/package-lists/apt-utils.list.binary
-    echo "  Added apt-utils to binary packages"
+    if [[ "$QUIET" != true ]]; then
+        echo "  Added apt-utils to binary packages"
+    fi
 
     # Generate package list
     generate_package_list
@@ -317,18 +482,27 @@ EOF
 # Run the build
 run_build() {
     echo "Starting live-build..."
-    echo "This may take 30-60 minutes depending on your system and network."
-    echo ""
-    
+    if [[ "$QUIET" != true ]]; then
+        echo "This may take 30-60 minutes depending on your system and network."
+    fi
+
     cd "$SCRIPT_DIR"
-    
-    # Run lb build
-    lb build 2>&1 | tee build.log || {
-        echo "Error: lb build failed"
-        echo "Check build.log for details"
-        exit 1
-    }
-    
+
+    # Run lb build - log is handled by cleanup functions
+    # In quiet mode, suppress verbose debootstrap/apt output but keep errors visible
+    if [[ "$QUIET" == true ]]; then
+        lb build > build.log 2>&1 || {
+            echo "Error: lb build failed. Check build.log for details."
+            tail -50 build.log
+            exit 1
+        }
+    else
+        lb build 2>&1 | tee build.log || {
+            echo "Error: lb build failed"
+            exit 1
+        }
+    fi
+
     echo ""
     echo "Build completed successfully."
 }
@@ -373,6 +547,12 @@ validate_output() {
 
 # Main function
 main() {
+    # Set up error handling traps first
+    setup_traps
+
+    # Clean up any leftover artifacts from previous runs
+    initial_cleanup
+
     configure_live_build
     run_build
     validate_output

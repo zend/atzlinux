@@ -41,7 +41,7 @@ jobs:
       - name: Build LiveCD
         run: |
           cd isodvd/livecd
-          sudo ./build-livecd.sh --mirror debian
+          sudo ./build-livecd.sh --mirror debian --quiet
 
       - name: Upload LiveCD artifact
         uses: actions/upload-artifact@v4
