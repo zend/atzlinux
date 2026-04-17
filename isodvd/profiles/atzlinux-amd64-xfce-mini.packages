@@ -44,8 +44,9 @@ fonts-wqy-zenhei
 xfonts-wqy
 
 libnss3
-fcitx-config-gtk
-fcitx-frontend-gtk3
+fcitx5-config-gtk3
+fcitx5-frontend-gtk3
+fcitx5-frontend-qt5
 libgsettings-qt1
 policykit-1-gnome
 opencc
@@ -54,13 +55,11 @@ zip
 ethtool
 
 dbus-x11
-fcitx
-fcitx-libs
-fcitx-module-kimpanel
-fcitx-module-x11
-fcitx-sunpinyin
-fcitx-ui-classic
-fcitx-ui-light
+fcitx5
+fcitx5-chinese-addons
+fcitx5-modules
+fcitx5-pinyin
+fcitx5-ui-classic
 im-config
 net-tools
 network-manager-gnome
