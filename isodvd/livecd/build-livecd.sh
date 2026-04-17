@@ -345,15 +345,11 @@ copy_hooks() {
 copy_bootloader_files() {
     local bootloader_dir="$SCRIPT_DIR/bootloader"
 
-    if [[ ! -d "$bootloader_dir" ]]; then
-        return
-    fi
-
     # Create bootloader config directory for syslinux/isolinux
     mkdir -p config/bootloaders/isolinux
 
     # Copy splash.png if exists (syslinux boot screen background, 640x480)
-    if [[ -f "$bootloader_dir/splash.png" ]]; then
+    if [[ -d "$bootloader_dir" && -f "$bootloader_dir/splash.png" ]]; then
         cp "$bootloader_dir/splash.png" config/bootloaders/isolinux/
         if [[ "$QUIET" != true ]]; then
             echo "  Copied splash.png for boot screen"
@@ -361,12 +357,18 @@ copy_bootloader_files() {
     fi
 
     # Copy splash.svg.in if exists (SVG template with variable substitution)
-    if [[ -f "$bootloader_dir/splash.svg.in" ]]; then
+    if [[ -d "$bootloader_dir" && -f "$bootloader_dir/splash.svg.in" ]]; then
         cp "$bootloader_dir/splash.svg.in" config/bootloaders/isolinux/
         if [[ "$QUIET" != true ]]; then
             echo "  Copied splash.svg.in template for boot screen"
         fi
     fi
+
+    # Create empty bootlogo to prevent lb_binary_syslinux error
+    # The live-build theme doesn't create bootlogo, but the script expects it
+    cd config/bootloaders/isolinux
+    echo "" | cpio --quiet -o > bootlogo 2>/dev/null || true
+    cd "$SCRIPT_DIR"
 }
 
 # Configure live-build
