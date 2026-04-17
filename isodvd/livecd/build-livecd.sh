@@ -381,6 +381,7 @@ configure_live_build() {
             --firmware-chroot "false" \
             --cache "false" \
             --bootloader "grub" \
+            --memtest "none" \
             --mode "debian" \
             > /dev/null \
             || {
@@ -412,6 +413,7 @@ configure_live_build() {
             --firmware-chroot "false" \
             --cache "false" \
             --bootloader "grub" \
+            --memtest "none" \
             --mode "debian" \
             || {
                 echo "Error: lb config failed"
