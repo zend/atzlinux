@@ -380,7 +380,7 @@ configure_live_build() {
             --security "false" \
             --firmware-chroot "false" \
             --cache "false" \
-            --bootloader "grub" \
+            --bootloader "syslinux" \
             --memtest "none" \
             --mode "debian" \
             > /dev/null \
@@ -412,7 +412,7 @@ configure_live_build() {
             --security "false" \
             --firmware-chroot "false" \
             --cache "false" \
-            --bootloader "grub" \
+            --bootloader "syslinux" \
             --memtest "none" \
             --mode "debian" \
             || {
