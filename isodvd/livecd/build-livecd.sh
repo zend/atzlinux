@@ -232,7 +232,7 @@ import_build_config() {
 
 # Generate package list from existing profile
 generate_package_list() {
-    local packages_file="$ISODVD_DIR/profiles/atzlinux-amd64-xfce.packages"
+    local packages_file="$ISODVD_DIR/profiles/atzlinux-amd64-xfce-mini.packages"
     local output_file="$SCRIPT_DIR/config/package-lists/atzlinux-packages.list"
 
     if [[ ! -f "$packages_file" ]]; then
@@ -515,7 +515,6 @@ validate_output() {
         iso_file="live-image-amd64.hybrid.iso"
     fi
     local output_name="atzlinux-live-${DEBVERSION:-12.13.1}-amd64.iso"
-    local output_dir="/tmp/livecd"
 
     cd "$SCRIPT_DIR"
 
@@ -533,16 +532,15 @@ validate_output() {
 
     echo "ISO size: $(du -h "$iso_file" | cut -f1)"
 
-    # Move to output directory
-    mkdir -p "$output_dir"
-    mv "$iso_file" "$output_dir/$output_name"
+    # Rename ISO in current directory (same partition, no copy needed)
+    mv "$iso_file" "$output_name"
 
     echo ""
     echo "=== Build Complete ==="
-    echo "ISO created: $output_dir/$output_name"
+    echo "ISO created: $SCRIPT_DIR/$output_name"
     echo ""
     echo "To test in QEMU (if installed):"
-    echo "  qemu-system-x86_64 -m 2048 -cdrom $output_dir/$output_name"
+    echo "  qemu-system-x86_64 -m 2048 -cdrom $SCRIPT_DIR/$output_name"
 }
 
 # Main function

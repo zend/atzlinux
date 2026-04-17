@@ -47,14 +47,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: atzlinux-livecd
-          path: /tmp/livecd/*.iso
+          path: isodvd/livecd/*.iso
           retention-days: 7
 
       - name: Create release
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
-          files: /tmp/livecd/*.iso
+          files: isodvd/livecd/*.iso
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
